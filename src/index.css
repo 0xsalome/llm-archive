@@ -159,6 +159,33 @@ a {
   gap: 1rem;
 }
 
+.home-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-link-button {
+  min-width: 4.25rem;
+  height: 2rem;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0 0.55rem;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.home-link-button:hover {
+  color: var(--ink);
+  background: var(--wash);
+}
+
 .theme-toggle {
   width: 2rem;
   height: 2rem;
