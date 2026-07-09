@@ -1,0 +1,19 @@
+---
+---
+
+<script is:inline>
+  window.StarlightThemeProvider = (() => {
+    const storedTheme =
+      typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+    const theme = storedTheme === 'dark' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = theme;
+
+    return {
+      updatePickers(nextTheme = theme) {
+        document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+          picker.dataset.theme = nextTheme === 'dark' ? 'dark' : 'light';
+        });
+      },
+    };
+  })();
+</script>

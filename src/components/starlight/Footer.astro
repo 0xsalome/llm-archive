@@ -1,0 +1,229 @@
+---
+import DefaultFooter from "@astrojs/starlight/components/Footer.astro";
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+
+type AdditionType = "comment" | "related_case" | "correction" | "reference" | "memo";
+
+type AdditionFrontmatter = {
+  article?: string;
+  title?: string;
+  displayName?: string;
+  type?: AdditionType | string;
+  createdAt?: Date | string;
+};
+
+type AdditionModule = {
+  frontmatter?: AdditionFrontmatter;
+  Content?: AstroComponentFactory;
+};
+
+const { starlightRoute } = Astro.locals;
+const entryId = starlightRoute.entry.id;
+const articleSlug = entryId.split("/").filter(Boolean).at(-1) ?? entryId;
+const isArchiveArticle = entryId.startsWith("archive/") && Boolean(articleSlug);
+
+const githubOwner = import.meta.env.PUBLIC_GITHUB_OWNER || "0xsalome";
+const githubRepo = import.meta.env.PUBLIC_GITHUB_REPO || "llm-archive";
+const githubBranch = import.meta.env.PUBLIC_GITHUB_BRANCH || "main";
+const githubNotesRoot = (import.meta.env.PUBLIC_GITHUB_NOTES_ROOT || "content/notes").replace(/^\/|\/$/g, "");
+
+const today = new Date().toISOString().slice(0, 10);
+
+const noteTemplate = `---
+article: "${articleSlug}"
+title: ""
+displayName: ""
+type: "comment"
+createdAt: "${today}"
+---
+
+ここに追記案、コメント、関連事例、補足、反証メモなどを書いてください。
+`;
+
+const githubNewNoteUrl = new URL(
+  `https://github.com/${githubOwner}/${githubRepo}/new/${encodeURIComponent(githubBranch)}/${githubNotesRoot}/${encodeURIComponent(articleSlug)}`,
+);
+githubNewNoteUrl.searchParams.set("filename", `${today}-your-note.md`);
+githubNewNoteUrl.searchParams.set("value", noteTemplate);
+
+const noteModules = import.meta.glob<AdditionModule>("../../../content/notes/**/*.md", { eager: true });
+
+const formatDate = (value: unknown) => {
+  if (!value) return "";
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  const date = new Date(String(value));
+  return Number.isNaN(date.valueOf()) ? String(value) : date.toISOString().slice(0, 10);
+};
+
+const additions = Object.entries(noteModules)
+  .map(([path, module]) => {
+    const match = path.replace(/\\/g, "/").match(/\/content\/notes\/([^/]+)\/([^/]+\.md)$/);
+    const frontmatter = module.frontmatter ?? {};
+
+    return {
+      path,
+      directorySlug: match?.[1] ?? "",
+      fileName: match?.[2] ?? "",
+      frontmatter,
+      Content: module.Content,
+    };
+  })
+  .filter((note) => {
+    const article = note.frontmatter.article;
+    return note.directorySlug === articleSlug && article === articleSlug && note.Content;
+  })
+  .sort((a, b) => {
+    const aDate = formatDate(a.frontmatter.createdAt);
+    const bDate = formatDate(b.frontmatter.createdAt);
+    return aDate.localeCompare(bDate) || a.fileName.localeCompare(b.fileName);
+  });
+---
+
+{
+  isArchiveArticle && (
+    <div class="llm-additions">
+      {
+        additions.length > 0 && (
+          <section class="llm-additions-list" aria-labelledby="llm-additions-heading">
+            <h2 id="llm-additions-heading">追記・コメント</h2>
+            <div class="llm-addition-cards">
+              {additions.map((note) => {
+                const Content = note.Content;
+                const title = note.frontmatter.title || "追記案";
+                const displayName = note.frontmatter.displayName || "";
+                const createdAt = formatDate(note.frontmatter.createdAt);
+
+                return (
+                  <article class="llm-addition-card">
+                    <header class="llm-addition-card-header">
+                      <h3>{title}</h3>
+                      <div class="llm-addition-meta">
+                        {displayName && <span>{displayName}</span>}
+                        {createdAt && <time datetime={createdAt}>{createdAt}</time>}
+                      </div>
+                    </header>
+                    <div class="llm-addition-body">{Content && <Content />}</div>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        )
+      }
+
+      <aside class="llm-addition-cta" aria-label="追記案やコメント">
+        <p>
+          本文を直接編集するのではなく、このページに紐づく追記MDを追加できます。採用された追記は、記事末尾にカードとして表示されます。
+          ファイル名の <code>your-note</code> の部分は、たとえば <code>{today}-blue-light-note.md</code> のように任意の短い名前へ変更してください。
+        </p>
+        <a class="llm-addition-button" href={githubNewNoteUrl.toString()} target="_blank" rel="noreferrer">
+          このページに追記案やコメントを送る
+        </a>
+      </aside>
+    </div>
+  )
+}
+
+<DefaultFooter />
+
+<style>
+  .llm-additions {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .llm-additions-list {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .llm-additions-list h2 {
+    margin: 0;
+    color: var(--sl-color-white);
+    font-size: 1rem;
+    font-weight: 850;
+    letter-spacing: 0;
+  }
+
+  .llm-addition-cards {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .llm-addition-card {
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 6px;
+    padding: 1rem;
+    background: color-mix(in srgb, var(--sl-color-bg) 82%, var(--sl-color-gray-6));
+  }
+
+  .llm-addition-card-header {
+    display: grid;
+    gap: 0.35rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .llm-addition-card h3 {
+    margin: 0;
+    color: var(--sl-color-white);
+    font-size: 0.95rem;
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+
+  .llm-addition-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.7rem;
+    color: var(--sl-color-gray-3);
+    font-size: 0.74rem;
+  }
+
+  .llm-addition-body {
+    color: var(--sl-color-gray-2);
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
+
+  .llm-addition-body :global(*:first-child) {
+    margin-top: 0;
+  }
+
+  .llm-addition-body :global(*:last-child) {
+    margin-bottom: 0;
+  }
+
+  .llm-addition-cta {
+    display: grid;
+    gap: 0.8rem;
+    border-top: 1px solid var(--sl-color-hairline);
+    padding-top: 1.25rem;
+  }
+
+  .llm-addition-cta p {
+    margin: 0;
+    max-width: 42rem;
+    color: var(--sl-color-gray-3);
+    font-size: 0.86rem;
+    line-height: 1.7;
+  }
+
+  .llm-addition-button {
+    width: fit-content;
+    border: 1px solid var(--sl-color-accent);
+    border-radius: 4px;
+    padding: 0.55rem 0.75rem;
+    background: transparent;
+    color: var(--sl-color-accent-high);
+    font-size: 0.86rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  .llm-addition-button:hover {
+    background: var(--sl-color-accent-low);
+    color: var(--sl-color-white);
+  }
+</style>

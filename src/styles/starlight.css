@@ -1,0 +1,239 @@
+:root {
+  --sl-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --sl-color-bg: #f4f1ea;
+  --sl-color-bg-nav: #f4f1ea;
+  --sl-color-bg-sidebar: #f4f1ea;
+  --sl-color-hairline: #d1ceb9;
+  --sl-color-text: #2d2b26;
+  --sl-color-white: #2d2b26;
+  --sl-color-gray-1: #403d35;
+  --sl-color-gray-2: #5f5a4b;
+  --sl-color-gray-3: #736f5e;
+  --sl-color-gray-4: #9d9784;
+  --sl-color-gray-5: #d1ceb9;
+  --sl-color-gray-6: #ebe7d9;
+  --sl-color-black: #f4f1ea;
+  --sl-color-accent-low: #ebe7d9;
+  --sl-color-accent: #5a7d3c;
+  --sl-color-accent-high: #2d5a4c;
+  --llm-seed: #a86d33;
+  --llm-growing: #5a7d3c;
+  --llm-checked: #2d5a4c;
+  --llm-superseded: #6f6876;
+  --llm-term-bg: #eef4e6;
+  --llm-term-border: #8faa6b;
+  --llm-term-text: #2d5a4c;
+}
+
+:root[data-theme="dark"] {
+  --sl-color-bg: #171612;
+  --sl-color-bg-nav: #171612;
+  --sl-color-bg-sidebar: #171612;
+  --sl-color-hairline: #3a352b;
+  --sl-color-text: #e9e3d4;
+  --sl-color-white: #f4f1ea;
+  --sl-color-gray-1: #f4f1ea;
+  --sl-color-gray-2: #d9d1bc;
+  --sl-color-gray-3: #b8af99;
+  --sl-color-gray-4: #847b68;
+  --sl-color-gray-5: #3a352b;
+  --sl-color-gray-6: #26231d;
+  --sl-color-black: #171612;
+  --sl-color-accent-low: #26231d;
+  --sl-color-accent: #8faa6b;
+  --sl-color-accent-high: #c6d7ac;
+  --llm-term-bg: #20291c;
+  --llm-term-border: #8faa6b;
+  --llm-term-text: #c6d7ac;
+}
+
+.llm-note-heading {
+  display: grid;
+  gap: 1rem;
+}
+
+.llm-note-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--sl-color-gray-3);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72rem;
+}
+
+.llm-status {
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 0.18rem 0.45rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.llm-status-seed {
+  color: var(--llm-seed);
+}
+
+.llm-status-growing {
+  color: var(--llm-growing);
+}
+
+.llm-status-checked {
+  color: var(--llm-checked);
+}
+
+.llm-status-superseded {
+  color: var(--llm-superseded);
+}
+
+.llm-note-heading h1 {
+  margin: 0;
+  color: var(--sl-color-white);
+  font-size: clamp(1.85rem, 4vw, 3rem);
+  font-weight: 950;
+  letter-spacing: 0;
+  line-height: 1.05;
+}
+
+.llm-note-heading h1.llm-split-title {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.llm-title-main,
+.llm-title-sub {
+  display: block;
+}
+
+.llm-title-sub {
+  max-width: 42rem;
+  color: var(--sl-color-gray-2);
+  font-size: 0.52em;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.llm-title-sub span {
+  margin-right: 0.35em;
+  color: var(--sl-color-gray-4);
+  font-weight: 700;
+}
+
+.llm-note-description {
+  margin: 0;
+  max-width: 44rem;
+  color: var(--sl-color-gray-2);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.llm-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.llm-tag-list li {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 4px;
+  padding: 0.25rem 0.45rem;
+  color: var(--sl-color-gray-3);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.llm-tag-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.llm-tag-list a:hover {
+  color: var(--sl-color-white);
+}
+
+.sl-markdown-content .llm-term-note {
+  margin: 1.25rem 0 1.75rem;
+  border-left: 4px solid var(--llm-term-border);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  background: var(--llm-term-bg);
+  color: var(--sl-color-text);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.sl-markdown-content .llm-term-note strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--llm-term-text);
+  font-size: 0.78rem;
+  letter-spacing: 0;
+}
+
+.sl-markdown-content .llm-term-note dl {
+  margin: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.sl-markdown-content .llm-term-note dt {
+  color: var(--llm-term-text);
+  font-weight: 800;
+}
+
+.sl-markdown-content .llm-term-note dd {
+  margin: 0;
+}
+
+.site-title,
+.right-sidebar-panel,
+.sidebar-content {
+  letter-spacing: 0;
+}
+
+.sidebar-content a span {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+}
+
+.sidebar-content a {
+  align-items: flex-start;
+}
+
+.llm-theme-toggle {
+  width: 2rem;
+  height: 2rem;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--sl-color-gray-3);
+  cursor: pointer;
+}
+
+.llm-theme-toggle:hover {
+  color: var(--sl-color-white);
+  background: var(--sl-color-gray-6);
+}
+
+.llm-theme-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.llm-theme-icon-dark,
+starlight-theme-select[data-theme="dark"] .llm-theme-icon-light {
+  display: none;
+}
+
+starlight-theme-select[data-theme="dark"] .llm-theme-icon-dark {
+  display: block;
+}

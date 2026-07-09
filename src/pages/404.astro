@@ -1,0 +1,35 @@
+---
+import "../index.css";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ページが見つかりません | LLM書庫</title>
+    <link rel="icon" type="image/png" href={`${base}/favicon.png`} />
+    <meta name="description" content="LLM書庫で存在しないページにアクセスしたときの案内ページ。" />
+    <script is:inline>
+      (() => {
+        const storedTheme = localStorage.getItem("starlight-theme");
+        document.documentElement.dataset.theme = storedTheme === "dark" ? "dark" : "light";
+      })();
+    </script>
+  </head>
+  <body class="home-page">
+    <main class="vault-main not-found-page">
+      <p class="small-label">404</p>
+      <h1 class="site-title">ページが見つかりません</h1>
+      <p class="site-description">
+        指定されたページは見つかりませんでした。記事の移動、URLの入力間違い、またはまだ公開していないノートへのリンクの可能性があります。
+      </p>
+      <a class="paper-card" href={`${base}/`}>
+        <span class="card-title">トップページに戻る</span>
+        <span class="card-description">記事一覧、タグ、カテゴリから近いノートを探せます。</span>
+      </a>
+    </main>
+  </body>
+</html>

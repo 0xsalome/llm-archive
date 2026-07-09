@@ -1,0 +1,21 @@
+{
+  "name": "llm-archive",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "description": "LLMとともに書かれた観察、仮説、断片、整理中の知識を置いておくための小さな書庫。",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "test": "pnpm build && node --test tests/*.mjs",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.41.2",
+    "astro": "^7.0.6"
+  }
+}
