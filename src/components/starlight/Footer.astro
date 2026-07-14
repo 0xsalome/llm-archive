@@ -24,27 +24,18 @@ const isArchiveArticle = entryId.startsWith("archive/") && Boolean(articleSlug);
 
 const githubOwner = import.meta.env.PUBLIC_GITHUB_OWNER || "0xsalome";
 const githubRepo = import.meta.env.PUBLIC_GITHUB_REPO || "llm-archive";
-const githubBranch = import.meta.env.PUBLIC_GITHUB_BRANCH || "main";
-const githubNotesRoot = (import.meta.env.PUBLIC_GITHUB_NOTES_ROOT || "content/notes").replace(/^\/|\/$/g, "");
 
-const today = new Date().toISOString().slice(0, 10);
+const articleTitle = starlightRoute.entry.data.title ?? articleSlug;
 
-const noteTemplate = `---
-article: "${articleSlug}"
-title: ""
-displayName: ""
-type: "comment"
-createdAt: "${today}"
----
+const issueTemplate = `<!-- article: ${articleSlug} -->
 
-ここに追記案、コメント、関連事例、補足、反証メモなどを書いてください。
+記事「${articleTitle}」への追記案・コメント・関連事例・補足・反証メモなどをここに書いてください。
 `;
 
-const githubNewNoteUrl = new URL(
-  `https://github.com/${githubOwner}/${githubRepo}/new/${encodeURIComponent(githubBranch)}/${githubNotesRoot}/${encodeURIComponent(articleSlug)}`,
-);
-githubNewNoteUrl.searchParams.set("filename", `${today}-your-note.md`);
-githubNewNoteUrl.searchParams.set("value", noteTemplate);
+const githubIssueUrl = new URL(`https://github.com/${githubOwner}/${githubRepo}/issues/new`);
+githubIssueUrl.searchParams.set("title", `コメント: ${articleTitle}`);
+githubIssueUrl.searchParams.set("body", issueTemplate);
+githubIssueUrl.searchParams.set("labels", "comment");
 
 const noteModules = import.meta.glob<AdditionModule>("../../../content/notes/**/*.md", { eager: true });
 
@@ -81,7 +72,13 @@ const additions = Object.entries(noteModules)
 
 {
   isArchiveArticle && (
-    <div class="llm-additions">
+    <div
+      class="llm-additions"
+      data-llm-comments
+      data-owner={githubOwner}
+      data-repo={githubRepo}
+      data-slug={articleSlug}
+    >
       {
         additions.length > 0 && (
           <section class="llm-additions-list" aria-labelledby="llm-additions-heading">
@@ -111,12 +108,24 @@ const additions = Object.entries(noteModules)
         )
       }
 
+      <section class="llm-additions-list llm-issue-comments" aria-labelledby="llm-comments-heading" hidden>
+        <h2 id="llm-comments-heading">コメント</h2>
+        <div class="llm-addition-cards" data-comment-cards />
+      </section>
+
       <aside class="llm-addition-cta" aria-label="追記案やコメント">
         <p>
-          このページへの追記案や関連メモを送れます。採用されたものは、記事末尾にカードとして表示されます。
+          このページへの追記案や関連メモを送れます。GitHubアカウントがあれば、その場でコメントを追加できます。
         </p>
-        <a class="llm-addition-button" href={githubNewNoteUrl.toString()} target="_blank" rel="noreferrer">
-          このページに追記案やコメントを送る
+        <a class="llm-addition-button" href={githubIssueUrl.toString()} target="_blank" rel="noreferrer">
+          <svg class="llm-addition-button-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            />
+          </svg>
+          <span>GitHubでコメントを追加</span>
         </a>
       </aside>
     </div>
@@ -124,6 +133,92 @@ const additions = Object.entries(noteModules)
 }
 
 <DefaultFooter />
+
+<script>
+  async function loadLlmComments() {
+    const container = document.querySelector<HTMLElement>("[data-llm-comments]");
+    if (!container) return;
+
+    const owner = container.dataset.owner;
+    const repo = container.dataset.repo;
+    const slug = container.dataset.slug;
+    const section = container.querySelector<HTMLElement>(".llm-issue-comments");
+    const list = container.querySelector<HTMLElement>("[data-comment-cards]");
+    if (!owner || !repo || !slug || !section || !list || list.childElementCount > 0) return;
+
+    const marker = `<!-- article: ${slug} -->`;
+    const endpoint = `https://api.github.com/repos/${owner}/${repo}/issues?labels=comment&state=open&per_page=100&sort=created&direction=asc`;
+
+    let issues: any;
+    try {
+      const res = await fetch(endpoint, { headers: { Accept: "application/vnd.github+json" } });
+      if (!res.ok) return;
+      issues = await res.json();
+    } catch {
+      return;
+    }
+    if (!Array.isArray(issues)) return;
+
+    const dateFmt = new Intl.DateTimeFormat("ja-JP", { year: "numeric", month: "2-digit", day: "2-digit" });
+
+    const cards = issues
+      .filter((issue) => !issue.pull_request && typeof issue.body === "string" && issue.body.includes(marker))
+      .map((issue) => {
+        const body = issue.body.replace(marker, "").trim();
+
+        const card = document.createElement("article");
+        card.className = "llm-addition-card";
+
+        const header = document.createElement("header");
+        header.className = "llm-addition-card-header";
+
+        const meta = document.createElement("div");
+        meta.className = "llm-addition-meta";
+
+        if (issue.user?.login) {
+          const author = document.createElement("a");
+          author.href = issue.user.html_url;
+          author.target = "_blank";
+          author.rel = "noreferrer";
+          author.textContent = issue.user.login;
+          meta.appendChild(author);
+        }
+
+        const created = issue.created_at ? new Date(issue.created_at) : null;
+        if (created && !Number.isNaN(created.valueOf())) {
+          const time = document.createElement("time");
+          time.dateTime = issue.created_at;
+          time.textContent = dateFmt.format(created);
+          meta.appendChild(time);
+        }
+
+        const link = document.createElement("a");
+        link.href = issue.html_url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.textContent = "GitHubで見る";
+        meta.appendChild(link);
+
+        header.appendChild(meta);
+        card.appendChild(header);
+
+        const bodyEl = document.createElement("div");
+        bodyEl.className = "llm-addition-body llm-comment-body";
+        bodyEl.textContent = body;
+        card.appendChild(bodyEl);
+
+        return card;
+      });
+
+    if (cards.length === 0) return;
+
+    for (const card of cards) list.appendChild(card);
+    section.hidden = false;
+  }
+
+  loadLlmComments();
+  document.addEventListener("astro:page-load", loadLlmComments);
+</script>
 
 <style>
   .llm-additions {
@@ -179,6 +274,21 @@ const additions = Object.entries(noteModules)
     font-size: 0.74rem;
   }
 
+  .llm-addition-meta a {
+    color: var(--sl-color-gray-2);
+    text-decoration: none;
+  }
+
+  .llm-addition-meta a:hover {
+    color: var(--sl-color-accent-high);
+    text-decoration: underline;
+  }
+
+  .llm-comment-body {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
   .llm-addition-body {
     color: var(--sl-color-gray-2);
     font-size: 0.9rem;
@@ -209,6 +319,9 @@ const additions = Object.entries(noteModules)
   }
 
   .llm-addition-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     width: fit-content;
     border: 1px solid var(--sl-color-accent);
     border-radius: 4px;
@@ -219,6 +332,10 @@ const additions = Object.entries(noteModules)
     font-weight: 800;
     line-height: 1.2;
     text-decoration: none;
+  }
+
+  .llm-addition-button-icon {
+    flex-shrink: 0;
   }
 
   .llm-addition-button:hover {
