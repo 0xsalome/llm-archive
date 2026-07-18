@@ -9,3 +9,4 @@ dist/
 .cache/
 .vite/
 .pnpm-store/
+.local/
