@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { archiveCategoryItems } from "../archive-navigation.mjs";
 import "../index.css";
 
 const entries = (await getCollection("docs")).filter((entry) => entry.id !== "404");
@@ -25,24 +26,7 @@ for (const entry of entries) {
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 const isSharedVariant = import.meta.env.PUBLIC_SITE_VARIANT === "shared";
 const entryById = new Map(entries.map((entry) => [entry.id, entry]));
-const categories = [
-  {
-    label: "Start Here",
-    items: ["archive/first-note"],
-  },
-  {
-    label: "Technology",
-    items: ["archive/sound-body-brain-waves", "archive/everyday-uncanny-technologies-japan"],
-  },
-  {
-    label: "Ecology",
-    items: ["archive/environmental-humanities-minakata-suiten"],
-  },
-  {
-    label: "References",
-    items: ["archive/github-open-source-license-lineage"],
-  },
-]
+const categories = archiveCategoryItems
   .map((category) => ({
     ...category,
     entries: category.items
@@ -58,6 +42,7 @@ const sortedTags = Array.from(tagCounts.entries()).sort(([tagA, countA], [tagB, 
 
 const formatDate = (date: Date) => date.toISOString().slice(0, 10);
 const splitTitle = (title: string) => {
+  if ([...title].length <= 14) return { main: title, subtitle: "" };
   const match = title.match(/^(.*?)\s*(――|——)\s*(.+)$/);
   return match
     ? { main: match[1], subtitle: match[3] }
