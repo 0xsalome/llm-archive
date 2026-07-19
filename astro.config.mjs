@@ -2,9 +2,12 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
+const site = process.env.PUBLIC_SITE_URL || "https://0xsalome.github.io";
+const base = process.env.PUBLIC_BASE_PATH ?? "/llm-archive";
+
 export default defineConfig({
-  site: "https://0xsalome.github.io",
-  base: "/llm-archive",
+  site,
+  base,
   integrations: [
     starlight({
       title: "LLM書庫",
