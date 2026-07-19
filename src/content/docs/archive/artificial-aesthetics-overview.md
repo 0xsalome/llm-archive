@@ -1,6 +1,6 @@
 ---
-title: AIは美しい作品を作れるか、では足りない——『Artificial Aesthetics』を読む(概要編)
-description: Lev Manovich and Emanuele Arielli『Artificial Aesthetics』を、AIが作品だけでなく美的判断の環境をどう変えるかという観点から読む概要編。
+title: 人工美学——概念編
+description: Lev Manovich and Emanuele Arielli『Artificial Aesthetics』を、AIが作品だけでなく美的判断の環境をどう変えるかという観点から読む概念編。
 date: 2026-07-19
 status: seed
 tags:

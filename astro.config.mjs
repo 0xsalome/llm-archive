@@ -48,11 +48,11 @@ export default defineConfig({
           label: "Reading",
           items: [
             {
-              label: "AIは美しい作品を作れるか、では足りない\n『Artificial Aesthetics』を読む(概要編)",
+              label: "人工美学\n概念編",
               link: "/archive/artificial-aesthetics-overview/",
             },
             {
-              label: "圧縮される文化\nAIは何を残し、何を落とすのか(深掘り編)",
+              label: "人工美学\n深掘り編",
               link: "/archive/artificial-aesthetics-compression-deep-dive/",
             },
           ],
