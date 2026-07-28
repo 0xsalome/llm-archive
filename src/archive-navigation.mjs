@@ -11,6 +11,10 @@ export const archiveSidebar = [
         link: "/archive/sound-body-brain-waves/",
       },
       "archive/everyday-uncanny-technologies-japan",
+      {
+        label: "Massive Attackのフジロック演出\n何を根拠に信じるか",
+        link: "/archive/massive-attack-fuji-what-to-believe/",
+      },
     ],
   },
   {
@@ -26,11 +30,11 @@ export const archiveSidebar = [
     label: "Reading",
     items: [
       {
-        label: "人工美学\n概念編",
+        label: "人工美学 概念編",
         link: "/archive/artificial-aesthetics-overview/",
       },
       {
-        label: "人工美学\n深掘り編",
+        label: "人工美学 深掘り編",
         link: "/archive/artificial-aesthetics-compression-deep-dive/",
       },
     ],
