@@ -30,7 +30,7 @@ related_notes:
 
 これらを結ぶのは、単純な反権力ではない。パランティアは制度の判断、ニューラリンクは身体と思考、鉱山はデジタル空間を支える物質、レイジベイトは感情、検閲は発言を外側から方向づける。**画面が繰り返したのは、自律していると思う人間の判断が、どの基盤に支えられ、誰に編集されているのかという問いだった。**
 
-![2024年8月、Rock en Seineで演奏するMassive Attack。フジロック2026当日の写真ではない。](https://commons.wikimedia.org/wiki/Special:FilePath/Massive_Attack_2024_5.jpg?width=1200)
+![2024年8月、Rock en Seineで演奏するMassive Attack。フジロック2026当日の写真ではない。](https://commons.wikimedia.org/wiki/Special:FilePath/Massive_Attack_2024_5.jpg)
 *Massive Attack at Rock en Seine, 2024. 撮影: ManoSolo13241324 / 出典: Wikimedia Commons / ライセンス: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) / 変更なし。*
 
 ## パランティアが象徴したもの

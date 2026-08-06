@@ -29,7 +29,7 @@ related_notes:
 
 佐賀の焼き物を「有田焼400年」だけで捉えると、その前にあった唐津の役割が見えにくい。唐津焼は諸説を含むが、近年の研究では1580年代ごろ、岸岳城主・波多氏の領内で始まったとされる。岸岳周辺には窯が築かれ、陶土をろくろで成形し、釉薬を掛け、登窯で焼く生産が行われた。
 
-![杉林の斜面に細長く残る窯の遺構。両側に石を並べた側壁が続き、床面には焼けた石が露出している。](https://commons.wikimedia.org/wiki/Special:FilePath/Handougame-shimo_kiln_for_Karatsu_ware_in_Kitahata.jpg?width=1200)
+![杉林の斜面に細長く残る窯の遺構。両側に石を並べた側壁が続き、床面には焼けた石が露出している。](https://commons.wikimedia.org/wiki/Special:FilePath/Handougame-shimo_kiln_for_Karatsu_ware_in_Kitahata.jpg)
 *唐津市北波多稗田の半胴甕下窯跡。岸岳古窯跡群のひとつ。撮影: Pekachu / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 1592年から1598年の文禄・慶長の役の過程で、多くの朝鮮陶工が意思に反して日本へ移された。個々の渡来経緯は一様ではないが、唐津では朝鮮半島の連房式登窯、蹴ろくろ、施釉などの技術が加わり、生産量が増えた。唐津港から運ばれた壺、甕、茶碗、皿は西日本へ広がり、茶の湯では茶陶として評価された。唐津を含む茶碗の序列には「一井戸二楽三唐津」「一楽二萩三唐津」など複数の言い回しがあり、成立時期と出所は確定していない。本稿ではこの言い回しを歴史の根拠に用いず、唐津港から京都・大阪へ運ばれたという流通記録に基づいて考える。
@@ -55,12 +55,12 @@ related_notes:
 
 唐津焼は陶器であり、主に粘土質の陶土を使う。鉄分や砂粒を含む土は、焼くと灰色、褐色、赤褐色などを帯びる。絵唐津、斑唐津、朝鮮唐津、粉引などの違いは、胎土、化粧土、釉薬、窯の中の酸素量が組み合わさって生まれる。粗い粒や色の揺らぎは、陶土の性質が器面に残ったものである。
 
-![褐色がかった灰色の釉が掛かった壺。表面全体に細かい貫入が入り、鉄絵で萩の枝が描かれている。](https://commons.wikimedia.org/wiki/Special:FilePath/Kyushu_Ceramic_Museum_0029-54_Egaratsu_Tetsue-Hagimon-Tsubo.JPG?width=1200)
+![褐色がかった灰色の釉が掛かった壺。表面全体に細かい貫入が入り、鉄絵で萩の枝が描かれている。](https://commons.wikimedia.org/wiki/Special:FilePath/Kyushu_Ceramic_Museum_0029-54_Egaratsu_Tetsue-Hagimon-Tsubo.JPG)
 *絵唐津 鉄絵萩文壺。佐賀県立九州陶磁文化館蔵。撮影: Pekachu / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 有田の磁器は、陶石を粉砕・精製した磁土から作る。草創期の磁器生産は1610年代に始まっており、泉山の大鉱床が使われる以前にも、肥前各地の小規模な陶石が試されていた。泉山陶石は、流紋岩類が地下の熱水によって変質し、石英、セリサイト、カオリンなどを含む白い岩石になったものである。石英は磁器の骨格となり、セリサイトや長石質成分は高温でガラス質を作り、粘土鉱物は成形を助ける。鉄分が比較的少ないため、焼成後は白い素地になる。
 
-![山が切り崩され、黄白色の岩肌が大きく露出した採掘跡。手前に採石で崩れた岩が積もり、右手に坑口が開いている。](https://commons.wikimedia.org/wiki/Special:FilePath/Izumiyama_Ceramic_Stone_Field%2C_Arita_-_Nov_9%2C_2010_%281%29.jpg?width=1200)
+![山が切り崩され、黄白色の岩肌が大きく露出した採掘跡。手前に採石で崩れた岩が積もり、右手に坑口が開いている。](https://commons.wikimedia.org/wiki/Special:FilePath/Izumiyama_Ceramic_Stone_Field%2C_Arita_-_Nov_9%2C_2010_%281%29.jpg)
 *有田町の泉山磁石場。採掘によって山が削り取られ、陶石の岩体が露出している。撮影: Bytemarks / 出典: Wikimedia Commons / ライセンス: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.ja) / 変更なし。*
 
 佐賀県西部では、陶器用の陶土と磁器用の陶石が利用できた。磁器生産は1610年代に始まり、泉山の大鉱床はその後、1630年前後に見つかった可能性が高い。陶工が各地の原料を試した後に豊富な鉱床へ到達し、採掘、粉砕、成形、焼成、運搬を担う人と設備が加わったことで、二つの原料が産業として利用された。
@@ -71,14 +71,14 @@ related_notes:
 
 泉山の近くには水と斜面があった。川の水を利用する唐臼は木製の杵で硬い陶石を砕き、斜面には複数の焼成室を階段状に並べる連房式登窯が築かれた。周囲の山林は窯の薪を供給した。谷に沿って採石、粉砕、製土、成形、施釉、焼成の工程が配置された。
 
-![屋根の下に据えられた木造の装置。水を受ける長い木製の桶と、それにつながる太い梁が並んでいる。](https://commons.wikimedia.org/wiki/Special:FilePath/Karausu_Arita_Town_Museum_of_History_and_Folklore.JPG?width=1200)
+![屋根の下に据えられた木造の装置。水を受ける長い木製の桶と、それにつながる太い梁が並んでいる。](https://commons.wikimedia.org/wiki/Special:FilePath/Karausu_Arita_Town_Museum_of_History_and_Folklore.JPG)
 *復元された唐臼。有田町歴史民俗資料館。水の重みで杵を上下させ、陶石を粉砕した。撮影: Pekachu / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 1637年、佐賀藩は有田・伊万里の窯場を整理・統合した。背景には窯の増加に伴う無秩序な伐採と、陶業を管理する必要があった。有田町歴史民俗資料館の記録では、朝鮮から渡来した陶工とその関係者などを残し、日本人陶工ら826人が一度追放されたとされる。その後、税収への影響から一部は復帰した。現在の有田内山地区は、この再編の後に磁器生産へ集中した地域であり、谷筋に工程を集めた「工業団地」に近い性格を持っていた。
 
 佐賀藩は泉山陶石、窯、陶工、販売を管理し、皿山代官を置いた。大川内山の藩窯では、将軍家や大名への献上・贈答用に鍋島焼が作られた。石場でも用途が分けられ、藩窯用の上質な原料は「御用土」と呼ばれた。地下資源の価値が高まるにつれ、藩は原料と技術を統治の対象にした。
 
-![白い素地の大皿。呉須の青一色で松、竹、梅の枝が余白を大きく残して描かれている。](https://commons.wikimedia.org/wiki/Special:FilePath/Sometsuke-Shochikubaimon-Ozara_from_above_Nabeshima_ware_Saga_Prefectural_Museum.JPG?width=1200)
+![白い素地の大皿。呉須の青一色で松、竹、梅の枝が余白を大きく残して描かれている。](https://commons.wikimedia.org/wiki/Special:FilePath/Sometsuke-Shochikubaimon-Ozara_from_above_Nabeshima_ware_Saga_Prefectural_Museum.JPG)
 *染付松竹梅文大皿。鍋島焼、1840〜1870年代。佐賀県立博物館蔵。撮影: Pekachu / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 ### 伊万里津で、産地名が組み替わった
@@ -96,7 +96,7 @@ related_notes:
 | 有田 | 有田の窯場 | 現在は生産地名として使用 | 有田で生産される磁器の産地名 |
 | 鍋島 | 有田・岩谷内などを経て大川内山 | 佐賀藩の献上・贈答 | 市場向け地名より、藩窯の制度と様式を示す名 |
 
-![切り立った岩山を背にした谷あいの通り。石畳の両側に窯元の建物が並び、右手に「青山窯」と記した煉瓦造りの煙突が立つ。](https://commons.wikimedia.org/wiki/Special:FilePath/Okawachiyama.jpg?width=1200)
+![切り立った岩山を背にした谷あいの通り。石畳の両側に窯元の建物が並び、右手に「青山窯」と記した煉瓦造りの煙突が立つ。](https://commons.wikimedia.org/wiki/Special:FilePath/Okawachiyama.jpg)
 *伊万里市の大川内山。谷の奥に藩窯が置かれ、現在も窯元が並ぶ。撮影: STA3816 / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.ja) / 変更なし。*
 
 佐賀の焼き物には、採掘地、生産地、積出港、藩窯という複数の地理が重なっている。器の名前は、どの地点が買い手に見えていたかによって変わった。
@@ -107,7 +107,7 @@ related_notes:
 
 窯場は注文に応じ、皿や碗だけでなく、西洋の食卓や室内装飾に合わせた壺、瓶、把手付き器、人形などを作った。柿右衛門様式や金襴手様式はヨーロッパの王侯貴族に収集され、「IMARI」の名が海外に残った。
 
-![縁が花形に大きく波打つ白磁の鉢。赤、緑、青、黄の上絵で桜の枝と菊が描かれ、余白が広く取られている。](https://commons.wikimedia.org/wiki/Special:FilePath/Iroe-Ojumon-Rinkabachi_Kakiemon_ware_Saga_Prefectural_Museum.JPG?width=1200)
+![縁が花形に大きく波打つ白磁の鉢。赤、緑、青、黄の上絵で桜の枝と菊が描かれ、余白が広く取られている。](https://commons.wikimedia.org/wiki/Special:FilePath/Iroe-Ojumon-Rinkabachi_Kakiemon_ware_Saga_Prefectural_Museum.JPG)
 *色絵桜文輪花鉢。柿右衛門様式。佐賀県立博物館蔵。撮影: Pekachu / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 1680年代に中国磁器の輸出が回復すると、有田磁器は再び中国製品と競争した。ヨーロッパでも18世紀にマイセンなどが磁器生産を始めた。VOCの日本磁器貿易記録は通常1650年から1757年までの期間で整理されており、1757年が組織的取引の終点とされる。これは日本磁器の海外流通が同年にすべて止まったことを示す年ではない。有田は国内市場へ比重を移し、幕末・明治には再び輸出品と工業製品を開発した。
@@ -120,7 +120,7 @@ related_notes:
 
 原料の産地が広域化した後も、有田には製土、型、ろくろ、絵付け、窯、商社、教育機関、修理技術が蓄積している。どの石をどう調合し、どの温度で焼き、どの様式に仕上げるかという知識が、産地と土地の関係を支えている。
 
-![白壁と瓦屋根の建物が並ぶ通り。手前の建物に「今右衛門」と記した木の看板が下がっている。](https://commons.wikimedia.org/wiki/Special:FilePath/Arita_Akaemachi_potteries_and_porcelain_stores_street_01.JPG?width=1200)
+![白壁と瓦屋根の建物が並ぶ通り。手前の建物に「今右衛門」と記した木の看板が下がっている。](https://commons.wikimedia.org/wiki/Special:FilePath/Arita_Akaemachi_potteries_and_porcelain_stores_street_01.JPG)
 *有田町赤絵町。窯元と磁器店が並ぶ通り。撮影: Pekachu / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 唐津も、古い窯場があった範囲と現在の行政区域は一致しない。伊万里や武雄などでも古唐津系の陶器が焼かれていた。焼き物の産地は一つの市町村の地図より広く、窯、原料、陶工、港を結ぶ圏域として見る方が実態に近い。
