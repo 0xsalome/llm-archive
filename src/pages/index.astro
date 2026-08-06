@@ -3,8 +3,18 @@ import { getCollection } from "astro:content";
 import { archiveCategoryItems } from "../archive-navigation.mjs";
 import "../index.css";
 
+// 同じ日に公開した記事どうしは date で順番が決まらないため、左サイドバーの
+// 並び（archive-navigation.mjs）を第二の基準にする。人が決めた並びをそのまま
+// 使うことで、同日公開の記事がカテゴリをまたいで混ざらないようにしている。
+const sidebarOrder = new Map(
+  archiveCategoryItems.flatMap((category) => category.items).map((id, index) => [id, index]),
+);
+const orderInSidebar = (entry: { id: string }) => sidebarOrder.get(entry.id) ?? Number.MAX_SAFE_INTEGER;
+const byDateThenSidebar = (a: { id: string; data: { date: Date } }, b: { id: string; data: { date: Date } }) =>
+  b.data.date.valueOf() - a.data.date.valueOf() || orderInSidebar(a) - orderInSidebar(b);
+
 const entries = (await getCollection("docs")).filter((entry) => entry.id !== "404");
-entries.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+entries.sort(byDateThenSidebar);
 
 const statuses = ["seed", "growing", "checked", "superseded"] as const;
 const statusLabels = {
@@ -32,7 +42,7 @@ const categories = archiveCategoryItems
     entries: category.items
       .map((id) => entryById.get(id))
       .filter(Boolean)
-      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+      .sort(byDateThenSidebar),
   }))
   .filter((category) => category.entries.length > 0);
 const sortedTags = Array.from(tagCounts.entries()).sort(([tagA, countA], [tagB, countB]) => {
