@@ -191,6 +191,30 @@
   margin: 0;
 }
 
+/* 記事中の画像は縦横比を保ったまま高さを揃え、読み込み中の高さの飛びを抑える */
+.sl-markdown-content img {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  max-height: 26rem;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  background: var(--sl-color-gray-6);
+}
+
+/* 画像直後のイタリック1行をキャプションとして扱う */
+.sl-markdown-content img + em,
+.sl-markdown-content p:has(> img) + p > em:only-child {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--sl-color-gray-3);
+  font-size: 0.82rem;
+  font-style: normal;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .site-title,
 .right-sidebar-panel,
 .sidebar-content {

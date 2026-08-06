@@ -24,6 +24,14 @@ export const archiveSidebar = [
         label: "複雑さを手放さない学問\n環境人文学と南方熊楠の萃点",
         link: "/archive/environmental-humanities-minakata-suiten/",
       },
+      {
+        label: "日本各地の地質と焼き物の変遷\n土が様式を、移動と市場が産地をつくる",
+        link: "/archive/japan-geology-and-ceramics-history/",
+      },
+      {
+        label: "港が器の名を運んだ\n地質と焼き物の佐賀編",
+        link: "/archive/saga-geology-and-ceramics/",
+      },
     ],
   },
   {

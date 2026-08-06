@@ -78,6 +78,7 @@ AI Agentは下書き、要約、構造化、リンク候補の提案を支援し
 作業内容に応じて、該当する文書を先に読みます。
 
 - 記事を書く・編集する場合: `docs/agent-writing-guide.md` と `docs/frontmatter-guide.md` を必ず読む
+- 記事に画像を入れる場合: `docs/research-article-guide.md` の「画像利用条件」を必ず読む
 - Webリサーチ記事を書く場合: `docs/agent-writing-guide.md`、`docs/frontmatter-guide.md`、`docs/research-article-guide.md` を必ず読む
 - frontmatterやタグを直す場合: `docs/frontmatter-guide.md` を読む
 - JP/EN切替を実装する場合: `docs/i18n-implementation-note.md` を読む

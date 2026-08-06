@@ -8,8 +8,9 @@ experimental-commons:
 - https://kotowari-modoki.github.io/experimental-commons/
 
 Third-party images follow the authors, sources, licenses, and change notes
-listed in each article. Wikimedia Commons images with share-alike requirements,
-including CC BY-SA 3.0 images, remain under their original licenses.
+listed in each article. Wikimedia Commons images with attribution or share-alike
+requirements, including CC BY 2.0, CC BY-SA 3.0, and CC BY-SA 4.0 images, remain
+under their original licenses.
 
 This repository may include AI-generated assets and text drafted or revised
 with LLM assistance. Human editors are responsible for topic selection,
