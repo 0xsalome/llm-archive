@@ -45,7 +45,7 @@ related_notes: []
 
 ここで起きているのは、看板や警備員による注意ではなく、**身体感覚を使った空間の選別**である。
 
-![壁面に設置されたモスキート音発生装置。金属ケージの中にスピーカー状の機器がある。](https://commons.wikimedia.org/wiki/Special:FilePath/Mosquito_Noise_Device.jpg)
+![壁面に設置されたモスキート音発生装置。金属ケージの中にスピーカー状の機器がある。](https://commons.wikimedia.org/wiki/Special:FilePath/Mosquito_Noise_Device.jpg?width=1200)
 *モスキート型の高周波音発生装置。撮影: Sunmist / 出典: Wikimedia Commons / ライセンス: CC0 1.0 / 変更なし。*
 
 ### 青色照明（駅ホーム・踏切）

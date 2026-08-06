@@ -25,7 +25,7 @@ related_notes:
 
 備前焼は水田の下から掘る鉄分の多い粘土を、釉薬を掛けずに長時間焼く。信楽焼は古琵琶湖の堆積層に由来する耐火性の高い土を使い、長石粒や薪灰を器面に残す。有田焼は粘土層を掘る代わりに、熱水変質した岩石を粉にして白磁を作った。器の色、厚さ、焼成方法には、地下の違いが現れている。
 
-![釉薬を掛けていない赤褐色の壺。肩から胴にかけて黒い斑点と焦げが散り、ろくろの跡が横に走っている。](https://commons.wikimedia.org/wiki/Special:FilePath/Pot._Bizen_ware._Momoyama_stoneware.Mus%C3%A9e_Guimet.jpg)
+![釉薬を掛けていない赤褐色の壺。肩から胴にかけて黒い斑点と焦げが散り、ろくろの跡が横に走っている。](https://commons.wikimedia.org/wiki/Special:FilePath/Pot._Bizen_ware._Momoyama_stoneware.Mus%C3%A9e_Guimet.jpg?width=1200)
 *備前焼の壺。桃山時代、16世紀末。ギメ東洋美術館蔵。釉薬を掛けず、薪灰と炎が器面の色をつくっている。撮影: Ismoon / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 京都の京焼は、東山周辺など複数の窯場で発達し、窯ごとに異なる技法と作風を展開した。天草は国内有数の陶石産地でありながら、採石した原料の多くを肥前などへ送り出した。単一の地元鉱床と産地名が結びつかない例もある。
@@ -52,7 +52,7 @@ related_notes:
 
 火山活動やマグマの貫入に伴う熱水が、流紋岩や石英斑岩などを変質させる。長石などがセリサイトやカオリナイトに変わり、石英と粘土鉱物を含む白い岩石ができる。鉄やチタンが少なく、焼成後に白くなる原料は磁器に向く。
 
-![工場の地面に積み上げられた白い石の山。手前には褐色の岩塊が混ざり、奥には細かく砕かれた石が広がっている。](https://commons.wikimedia.org/wiki/Special:FilePath/Amakusa_Porcelain_Stones_in_a_porcelain_clay_factory_in_Ureshino_02.jpg)
+![工場の地面に積み上げられた白い石の山。手前には褐色の岩塊が混ざり、奥には細かく砕かれた石が広がっている。](https://commons.wikimedia.org/wiki/Special:FilePath/Amakusa_Porcelain_Stones_in_a_porcelain_clay_factory_in_Ureshino_02.jpg?width=1200)
 *選別中の天草陶石。佐賀県嬉野市の製土工場。白い石が磁器原料になり、鉄分の多い褐色の石は取り除かれる。撮影: Peka / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 有田の泉山陶石、熊本の天草陶石、石川の花坂陶石、愛媛の砥部陶石などがこの系統に入る。陶石を砕いて水を加え、必要に応じて精製・配合して磁土にする。日本の陶石には、一種類を主体に磁器素地を作りやすいものがあり、中国で陶石とカオリンを組み合わせる方法とは原料設計が異なる。
@@ -67,7 +67,7 @@ related_notes:
 
 信楽・伊賀では、約400万年前から移動した古琵琶湖の堆積層を利用する。花崗岩や流紋岩の風化物が湖沼にたまり、耐火性の高い粘土層ができた。信楽の土に含まれる長石や石英の粒は、焼成後も白い粒やガラス質の景色として残る。同じ古琵琶湖層群の圏内にある信楽と伊賀が、粗い土味や自然釉を共有する背景である。
 
-![橙色がかった褐色の壺。肩に白い粒が吹き出し、その上を緑がかった釉が流れ落ちている。](https://commons.wikimedia.org/wiki/Special:FilePath/Shigaraki_ware_pot%2C_Muromachi_period%2C_at_the_Mus%C3%A9e_Guimet.jpg)
+![橙色がかった褐色の壺。肩に白い粒が吹き出し、その上を緑がかった釉が流れ落ちている。](https://commons.wikimedia.org/wiki/Special:FilePath/Shigaraki_ware_pot%2C_Muromachi_period%2C_at_the_Mus%C3%A9e_Guimet.jpg?width=1200)
 *信楽焼の壺。室町時代、16世紀。ギメ東洋美術館蔵。器面に噴き出した白い粒が長石、肩を流れるのが薪灰による自然釉。撮影: Ismoon / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) / 変更なし。*
 
 ### 3　水田や小盆地の薄い層を使う――沖積・局所堆積型
@@ -78,18 +78,18 @@ related_notes:
 
 萩焼は大道土を主原料とし、金峯土や見島土などを配合する。大道土は花崗岩地域の小規模な盆地に堆積した、砂礫を含む白色粘土で、可塑性がある一方、強く焼き締まりにくい。金峯土は耐火度や粘性を調整し、鉄分の多い見島土は色と土味を加える。萩焼の柔らかな素地と吸水性は、三種類の原料をどう組み合わせるかによって作られてきた。
 
-![淡いクリーム色の釉が掛かった半球形の茶碗。釉の表面に細かい貫入が広がり、高台では釉が切れて素地が見えている。](https://commons.wikimedia.org/wiki/Special:FilePath/Hagi_ware_Japanese_tea_bowl%2C_18th-19th_century%2C_Freer_Gallery_of_Art.jpg)
+![淡いクリーム色の釉が掛かった半球形の茶碗。釉の表面に細かい貫入が広がり、高台では釉が切れて素地が見えている。](https://commons.wikimedia.org/wiki/Special:FilePath/Hagi_ware_Japanese_tea_bowl%2C_18th-19th_century%2C_Freer_Gallery_of_Art.jpg?width=1200)
 *萩焼の茶碗。18〜19世紀。フリーア美術館蔵。釉面の細かい貫入に茶が染み込み、使ううちに色が変わる。出典: Wikimedia Commons / ライセンス: パブリックドメイン / 変更なし。*
 
 ### 火山地域は、一つの型に収まらない
 
 鹿児島では、火山灰質土、凝灰岩、シラス中の鉄質層、熱水変質した陶石・カオリンが近い範囲に分布する。黒薩摩の胎土には窯場周辺の鉄分の多い土を配合し、釉薬にはシラス中の水酸化鉄層、火山灰質土、凝灰岩、雑木灰などを使う。白薩摩では、笠沙陶石や入来カオリンなど、白く焼ける限られた原料を選別・精製する。
 
-![蓮の葉の形をした白い茶碗。乳白色の釉に細かい貫入が走り、葉脈が浮き彫りにされている。](https://commons.wikimedia.org/wiki/Special:FilePath/Tea_Bowl_in_Shape_of_Lotus_Leaf%2C_Satsuma_ware%2C_Edo_period%2C_17th_century%2C_white_glaze_-_Tokyo_National_Museum_-_DSC06057.JPG)
+![蓮の葉の形をした白い茶碗。乳白色の釉に細かい貫入が走り、葉脈が浮き彫りにされている。](https://commons.wikimedia.org/wiki/Special:FilePath/Tea_Bowl_in_Shape_of_Lotus_Leaf%2C_Satsuma_ware%2C_Edo_period%2C_17th_century%2C_white_glaze_-_Tokyo_National_Museum_-_DSC06057.JPG?width=1200)
 *白薩摩の蓮葉形茶碗。竪野系、江戸時代17世紀後半。東京国立博物館蔵。撮影: Daderot / 出典: Wikimedia Commons / ライセンス: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) / 変更なし。*
 
-![黒い釉を掛けた平たい急須。蔓を巻いた提手が付き、蓋の縁では釉が切れて褐色の素地が見えている。](https://commons.wikimedia.org/wiki/Special:FilePath/Kurosatsuma.JPG)
-*黒薩摩の急須。鉄分の多い胎土に黒い釉を掛ける。撮影: fitm / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.ja) / 変更なし。*
+![黒い釉を掛けた平たい注ぎ口付きの器。蔓を巻いた提手が付き、蓋の縁では釉が切れて褐色の素地が見えている。](https://commons.wikimedia.org/wiki/Special:FilePath/Kurosatsuma.JPG?width=1200)
+*黒薩摩の黒じょか。鹿児島で焼酎を温めるために使う酒器で、水で割った焼酎を入れて火にかける。鉄分の多い胎土に黒い釉を掛けている。撮影: fitm / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.ja) / 変更なし。*
 
 「鹿児島は火山灰で焼いた」という説明は黒薩摩の一部と釉薬には当てはまるが、白薩摩の白さを説明できない。南九州の火山活動は、降下火山灰だけでなく、火砕流堆積物、凝灰岩、熱水変質鉱床を作った。その多様な地下資源が、白と黒という異なる系統に使い分けられた。
 
@@ -97,12 +97,12 @@ related_notes:
 
 志野は美濃焼に含まれる一様式である。16世紀末から美濃の大窯で生産され、鉄分の少ない陶土に長石を主体とする白釉を厚く掛けた。乳白色の釉肌、鉄絵、釉の薄い部分に現れる赤褐色の火色が特徴となる。産地としては美濃、原料の成因では古東海湖周辺の堆積粘土を基盤とする第二類型に入る。器の外観には、胎土に加えて岩石由来の長石釉も作用している。
 
-![厚い乳白色の釉に覆われた歪んだ形の茶碗。釉の下に鉄絵の線が透け、口縁と胴の一部が赤褐色に発色している。](https://commons.wikimedia.org/wiki/Special:FilePath/Tea_Bowl_known_as_%27Furisode%27%2C_Mino_ware%2C_Shino_type%2C_Azuchi-Momoyama_to_Edo_period%2C_16th-17th_century_-_Tokyo_National_Museum_-_DSC05893.JPG)
+![厚い乳白色の釉に覆われた歪んだ形の茶碗。釉の下に鉄絵の線が透け、口縁と胴の一部が赤褐色に発色している。](https://commons.wikimedia.org/wiki/Special:FilePath/Tea_Bowl_known_as_%27Furisode%27%2C_Mino_ware%2C_Shino_type%2C_Azuchi-Momoyama_to_Edo_period%2C_16th-17th_century_-_Tokyo_National_Museum_-_DSC05893.JPG?width=1200)
 *志野茶碗「振袖」。美濃焼、桃山〜江戸時代、16〜17世紀。東京国立博物館蔵。釉が薄い部分に赤褐色の火色が出ている。撮影: Daderot / 出典: Wikimedia Commons / ライセンス: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) / 変更なし。*
 
 楽茶碗は京都の茶陶である。樂美術館は、初代長次郎が楽茶碗を作り始めた時期を1579年頃と推定している。轆轤を使わず手捏ねで成形し、低火度の鉛釉で焼く。赤楽では聚楽土の色を生かし、黒楽では黒釉を使う。聚楽土の詳しい堆積成因は今回の参照資料から確認できず、三つの地質類型への固定は保留する。成立には千利休の茶の湯、長次郎の造形、樂家による継承が直接関わった。当初の「楽」は樂家の焼き物を指す呼称で、広域の窯業産地名とは性格が異なる。原料鉱床より都市の注文と家の系譜が前面に出る例として、比較表では京焼と分けて掲載する。
 
-![黒い釉に覆われた円筒形に近い茶碗。表面は艶が控えめで、ろくろ目がなく、指で押したような凹凸がある。](https://commons.wikimedia.org/wiki/Special:FilePath/Tea_bowl%2C_known_as_Suehiro%2C_studio_of_Chojiro%2C_Raku_ware%2C_Kuroraku_type%2C_Azuchi-Momoyama_to_Edo_period%2C_1500s-1600s_AD%2C_ceramic_-_Tokyo_National_Museum_-_Ueno_Park%2C_Tokyo%2C_Japan_-_DSC08889.jpg)
+![黒い釉に覆われた円筒形に近い茶碗。表面は艶が控えめで、ろくろ目がなく、指で押したような凹凸がある。](https://commons.wikimedia.org/wiki/Special:FilePath/Tea_bowl%2C_known_as_Suehiro%2C_studio_of_Chojiro%2C_Raku_ware%2C_Kuroraku_type%2C_Azuchi-Momoyama_to_Edo_period%2C_1500s-1600s_AD%2C_ceramic_-_Tokyo_National_Museum_-_Ueno_Park%2C_Tokyo%2C_Japan_-_DSC08889.jpg?width=1200)
 *黒楽茶碗「末広」。長次郎工房、桃山〜江戸時代、16〜17世紀。東京国立博物館蔵。轆轤を使わず手捏ねで成形されている。撮影: Daderot / 出典: Wikimedia Commons / ライセンス: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) / 変更なし。*
 
 ## 地質と焼き物の歴史は、四段階で変わった

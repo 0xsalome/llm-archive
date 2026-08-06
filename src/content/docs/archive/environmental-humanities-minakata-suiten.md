@@ -61,7 +61,7 @@ related_notes:
 
 南方熊楠（1867–1941）は、生物学者・民俗学者・博物学者として知られるが、その関心は仏教哲学から粘菌の生活史、性愛の民俗までを横断する、およそ一つの肩書には収まりきらない人物だった。彼の思想の核心を伝えるのが、真言宗の僧侶であった土宜法龍（どき ほうりゅう）との膨大な往復書簡、なかでも1903年に送られた図とともに説明された、いわゆる「南方マンダラ」である。
 
-![土宜法龍宛の1903年7月18日付書簡に描かれた、いわゆる南方マンダラの図。複数の曲線が交差している。](https://commons.wikimedia.org/wiki/Special:FilePath/%E5%8D%97%E6%96%B9%E3%83%9E%E3%83%B3%E3%83%80%E3%83%A92.jpg)
+![土宜法龍宛の1903年7月18日付書簡に描かれた、いわゆる南方マンダラの図。複数の曲線が交差している。](https://commons.wikimedia.org/wiki/Special:FilePath/%E5%8D%97%E6%96%B9%E3%83%9E%E3%83%B3%E3%83%80%E3%83%A92.jpg?width=1200)
 *南方マンダラ 7月18日図。作者: 南方熊楠 / 出典: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%8D%97%E6%96%B9%E3%83%9E%E3%83%B3%E3%83%80%E3%83%A92.jpg) / 原資料: [南方熊楠顕彰館](https://www.minakata.org/facility/collections/minakatamandala/) / ライセンス: Public domain / 変更なし。*
 
 熊楠はこの手紙のなかで、世界を五つの「不思議」に分けて考えた。

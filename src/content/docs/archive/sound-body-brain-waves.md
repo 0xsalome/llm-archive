@@ -100,7 +100,7 @@ related_notes: []
 
 砂を撒いた金属板や膜に、特定の周波数の振動を与えると、砂が動いて幾何学模様を描き出す。これがクラドニ図形であり、広くサイマティクスとも呼ばれる現象である。
 
-![共振する板の上で砂が節線に集まり、クラドニ図形を作っている。](https://commons.wikimedia.org/wiki/Special:FilePath/Quadratic_Chladni_plate_cropped_version.jpg)
+![共振する板の上で砂が節線に集まり、クラドニ図形を作っている。](https://commons.wikimedia.org/wiki/Special:FilePath/Quadratic_Chladni_plate_cropped_version.jpg?width=1200)
 *クラドニ図形。撮影: High Contrast / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) / 変更なし。*
 
 詩的に言えば、音が形になるように見える。しかし、より正確には、**物体の固有振動モードが可視化されている**。
@@ -114,7 +114,7 @@ related_notes: []
 
 つまり模様の形を決めているのは、音そのものだけではない。**板の形、材質、境界条件、周波数**が組み合わさっている。同じ周波数でも、丸い板と四角い板では違う模様になる。音が魔法のように特定の絵を描くのではなく、物体がもともと持っている固有の振動の仕方が、音によって呼び出され、砂によって見えるようになる。
 
-![コーンスターチと水の混合物が、正弦波の振動を受けて模様を作っている。](https://commons.wikimedia.org/wiki/Special:FilePath/CornstarchCymatics_cc.jpg)
+![コーンスターチと水の混合物が、正弦波の振動を受けて模様を作っている。](https://commons.wikimedia.org/wiki/Special:FilePath/CornstarchCymatics_cc.jpg?width=1200)
 *コーンスターチと水によるサイマティクス。撮影: Collin Cunningham / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) / 変更なし。*
 
 ## 疑似科学との境界

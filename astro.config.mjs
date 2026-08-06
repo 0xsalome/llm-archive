@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import { archiveSidebar } from "./src/archive-navigation.mjs";
+import { rehypeLazyImages } from "./src/rehype-lazy-images.mjs";
 
 const site = process.env.PUBLIC_SITE_URL || "https://0xsalome.github.io";
 const base = process.env.PUBLIC_BASE_PATH ?? "/llm-archive";
@@ -9,6 +10,9 @@ const base = process.env.PUBLIC_BASE_PATH ?? "/llm-archive";
 export default defineConfig({
   site,
   base,
+  markdown: {
+    rehypePlugins: [rehypeLazyImages],
+  },
   integrations: [
     starlight({
       title: "LLM書庫",
