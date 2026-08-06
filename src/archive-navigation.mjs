@@ -32,6 +32,14 @@ export const archiveSidebar = [
         label: "港が器の名を運んだ\n地質と焼き物の佐賀編",
         link: "/archive/saga-geology-and-ceramics/",
       },
+      {
+        label: "大分の湯はなぜ多様なのか\n湧出量・温泉地・泉質を事実から読む",
+        link: "/archive/oita-onsen-geology-and-quality/",
+      },
+      {
+        label: "温泉はどのように「知」の対象になったか\n古代の記録から近代科学まで",
+        link: "/archive/onsen-as-object-of-knowledge/",
+      },
     ],
   },
   {

@@ -9,8 +9,8 @@ experimental-commons:
 
 Third-party images follow the authors, sources, licenses, and change notes
 listed in each article. Wikimedia Commons images with attribution or share-alike
-requirements, including CC BY 2.0, CC BY-SA 3.0, and CC BY-SA 4.0 images, remain
-under their original licenses.
+requirements, including CC BY 2.0, CC BY 2.5, CC BY 3.0, CC BY-SA 3.0, and
+CC BY-SA 4.0 images, remain under their original licenses.
 
 This repository may include AI-generated assets and text drafted or revised
 with LLM assistance. Human editors are responsible for topic selection,
