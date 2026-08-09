@@ -1,0 +1,153 @@
+---
+import { annexEntries } from "../../annex";
+import RoomGate from "../../components/RoomGate.astro";
+import RoomThemeToggle from "../../components/RoomThemeToggle.astro";
+import "../../index.css";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const statuses = ["seed", "growing", "checked", "superseded"] as const;
+const statusLabels = {
+  seed: "🌱 seed",
+  growing: "🌿 growing",
+  checked: "🔎 checked",
+  superseded: "🧭 superseded",
+} as const;
+const counts = Object.fromEntries(statuses.map((status) => [status, 0])) as Record<(typeof statuses)[number], number>;
+const tagCounts = new Map<string, number>();
+
+for (const entry of annexEntries) {
+  counts[entry.data.status] += 1;
+  for (const tag of entry.data.tags) {
+    tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1);
+  }
+}
+
+const sortedTags = Array.from(tagCounts.entries()).sort(([tagA, countA], [tagB, countB]) => {
+  if (countA !== countB) return countB - countA;
+  return tagA.localeCompare(tagB, "ja");
+});
+
+const formatDate = (date: Date | string) => new Date(date).toISOString().slice(0, 10);
+const splitTitle = (title: string) => {
+  const match = title.match(/^(.*?)\s*(――|——)\s*(.+)$/);
+  return match
+    ? { main: match[1], subtitle: match[3] }
+    : { main: title, subtitle: "" };
+};
+---
+
+<!doctype html>
+<html lang="ja" data-pagefind-ignore>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Another room | LLM書庫</title>
+    <link rel="icon" type="image/png" href={`${base}/favicon.png`} />
+    <meta name="robots" content="noindex" />
+    <script is:inline>
+      (() => {
+        const storedTheme = localStorage.getItem("llm-archive:another-room-theme");
+        document.documentElement.dataset.theme = storedTheme === "light" ? "light" : "dark";
+        document.documentElement.dataset.roomAccess =
+          localStorage.getItem("llm-archive:another-room") === "open" ? "open" : "closed";
+      })();
+    </script>
+  </head>
+  <body class="home-page room-page">
+    <div class="vault-shell">
+      <aside class="vault-sidebar" data-room-content>
+        <section>
+          <p class="small-label">Status</p>
+          <nav class="status-list" aria-label="Status overview">
+            {
+              statuses.map((status) => (
+                <a class={`status-row status-${status}`} href={`#${status}`}>
+                  <span class="status-name">
+                    <span class="status-dot" />
+                    {statusLabels[status]}
+                  </span>
+                  <span class="status-count">{counts[status]}</span>
+                </a>
+              ))
+            }
+          </nav>
+        </section>
+
+        <section>
+          <p class="small-label">Tags</p>
+          <div class="tag-cloud">
+            {sortedTags.map(([tag, count]) => (
+              <span class="tag">
+                #{tag}
+                <span class="tag-count">{count}</span>
+              </span>
+            ))}
+          </div>
+        </section>
+      </aside>
+
+      <main class="vault-main">
+        <header>
+          <div class="home-heading-row">
+            <p class="small-label">LLM Archive</p>
+            <RoomThemeToggle />
+          </div>
+          <h1 class="site-title">There is another room.</h1>
+          <RoomGate />
+        </header>
+
+        <section class="card-grid" aria-label="Room entries" data-room-content>
+          {
+            annexEntries.map((entry) => {
+              const titleParts = splitTitle(entry.data.title);
+
+              return (
+                <a class="paper-card" id={entry.data.status} href={`${base}/another-room/${entry.slug}/`}>
+                  <div>
+                    <div class="card-top">
+                      <span class={`status-stamp status-${entry.data.status}`}>{statusLabels[entry.data.status]}</span>
+                      <time class="card-date" datetime={formatDate(entry.data.date)}>
+                        {formatDate(entry.data.date)}
+                      </time>
+                    </div>
+                    <h2 class:list={["card-title", titleParts.subtitle && "card-title-split"]}>
+                      <span class="card-title-main">{titleParts.main}</span>
+                      {
+                        titleParts.subtitle && (
+                          <span class="card-title-sub">
+                            <span aria-hidden="true">——</span>
+                            {titleParts.subtitle}
+                          </span>
+                        )
+                      }
+                    </h2>
+                    <p class="card-description">{entry.data.description}</p>
+                  </div>
+                  <div class="card-tags">
+                    {entry.data.tags.map((tag) => <span class="card-tag">#{tag}</span>)}
+                  </div>
+                </a>
+              );
+            })
+          }
+        </section>
+      </main>
+
+      <aside class="vault-preview" data-room-content>
+        <div class="room-preview-heading">
+          <div>
+            <p class="small-label">Entries</p>
+            <h2 class="preview-title">{annexEntries.length}</h2>
+          </div>
+          <RoomThemeToggle />
+        </div>
+        <div class="preview-rule"></div>
+        <p class="preview-description">The room keeps its own shelf.</p>
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <p><a href={`${base}/`}>LLM書庫に戻る</a></p>
+    </footer>
+  </body>
+</html>

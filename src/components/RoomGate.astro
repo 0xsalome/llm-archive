@@ -1,0 +1,48 @@
+<form class="room-gate" data-room-gate>
+  <label class="room-key-line">
+    <span>[ key</span>
+    <input
+      type="password"
+      name="key"
+      autocomplete="off"
+      aria-label="key"
+      inputmode="text"
+      maxlength="5"
+      size="5"
+      placeholder="_____"
+    />
+    <span>]</span>
+  </label>
+</form>
+
+<script is:inline>
+  (() => {
+    const storageKey = "llm-archive:another-room";
+    const answer = "crypt";
+
+    const openRoom = () => {
+      localStorage.setItem(storageKey, "open");
+      document.documentElement.dataset.roomAccess = "open";
+    };
+
+    document.querySelectorAll("[data-room-gate]").forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const input = form.querySelector("input");
+        const value = input?.value.trim() || "";
+
+        if (value === answer) {
+          openRoom();
+          input?.blur();
+          return;
+        }
+
+        if (input) {
+          input.value = "";
+          input.setAttribute("aria-invalid", "true");
+          window.setTimeout(() => input.removeAttribute("aria-invalid"), 900);
+        }
+      });
+    });
+  })();
+</script>

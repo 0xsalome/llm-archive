@@ -7,9 +7,28 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = path.join(root, "dist");
 
+async function listFiles(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files = await Promise.all(
+    entries.map(async (entry) => {
+      const resolved = path.join(dir, entry.name);
+      if (entry.isDirectory()) return listFiles(resolved);
+      if (entry.isFile()) return [resolved];
+      return [];
+    }),
+  );
+
+  return files.flat();
+}
+
 test("build emits the home page and custom 404 page", async () => {
   await access(path.join(distDir, "index.html"));
   await access(path.join(distDir, "404.html"));
+});
+
+test("build emits another room entrance and article pages", async () => {
+  await access(path.join(distDir, "another-room", "index.html"));
+  await access(path.join(distDir, "another-room", "threshold-note", "index.html"));
 });
 
 test("home page lists archive entries but not the 404 page", async () => {
@@ -17,7 +36,20 @@ test("home page lists archive entries but not the 404 page", async () => {
 
   assert.match(html, /LLM書庫/);
   assert.match(html, /archive\/first-note\//);
+  assert.match(html, /another-room\//);
   assert.doesNotMatch(html, /ページが見つかりません/);
+  assert.doesNotMatch(html, /扉の内側の最初の断片/);
+});
+
+test("another room pages are excluded from the pagefind index", async () => {
+  const files = await listFiles(path.join(distDir, "pagefind"));
+
+  for (const file of files) {
+    const source = await readFile(file, "utf8");
+
+    assert.doesNotMatch(source, /扉の内側の最初の断片/, `${file} includes room article title`);
+    assert.doesNotMatch(source, /threshold-note/, `${file} includes room article slug`);
+  }
 });
 
 test("article images are lazy loaded and requested at a display size", async () => {

@@ -186,6 +186,17 @@ a {
   background: var(--wash);
 }
 
+.quiet-room-link {
+  color: color-mix(in srgb, var(--muted) 72%, transparent);
+  text-decoration: none;
+}
+
+.quiet-room-link:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .theme-toggle {
   width: 2rem;
   height: 2rem;
@@ -320,6 +331,96 @@ html[data-theme="dark"] .theme-icon-dark {
   color: var(--muted);
   font-size: 0.86rem;
   line-height: 1.7;
+}
+
+.room-gate {
+  width: min(100%, 25rem);
+  margin-top: 1.35rem;
+}
+
+.room-key-line {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.45rem;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+.room-key-line input {
+  min-width: 0;
+  width: 7ch;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  border-radius: 0;
+  padding: 0.25rem 0.1rem;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  outline: none;
+}
+
+.room-key-line input:focus {
+  border-color: var(--ink);
+}
+
+.room-key-line input[aria-invalid="true"] {
+  border-color: var(--seed);
+}
+
+.room-key-line input::placeholder {
+  color: color-mix(in srgb, var(--muted) 54%, transparent);
+  opacity: 1;
+}
+
+.room-theme-toggle {
+  flex: 0 0 auto;
+  border-color: color-mix(in srgb, var(--muted) 58%, var(--rule));
+  background: var(--wash);
+  color: var(--ink);
+}
+
+.room-theme-toggle:hover {
+  background: var(--surface);
+  color: var(--ink);
+}
+
+html:not([data-room-access="open"]) [data-room-content],
+html[data-room-access="open"] [data-room-gate],
+html[data-room-access="open"] .room-gate-panel {
+  display: none;
+}
+
+html:not([data-room-access="open"]) .room-page .vault-main {
+  justify-content: center;
+}
+
+.room-gate-panel {
+  grid-column: 2;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.room-sidebar-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.room-sidebar-top .archive-home-link {
+  margin-bottom: 0;
+}
+
+.room-preview-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .paper-card {
