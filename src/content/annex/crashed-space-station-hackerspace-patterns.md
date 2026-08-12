@@ -3,6 +3,8 @@ title: "III. 墜落した宇宙ステーションのその後——c-base から
 description: "ヨーロッパのハッカー共同体は、空間の運営知をデザインパターンとして文書化した。30年後のCCCでは、通信の秘密に加えてAI・身体・認知も論点になっている。"
 date: 2026-08-12
 status: growing
+series: "テクノロジーと変性意識"
+series_order: 3
 tags:
   - 技術
   - 運用
