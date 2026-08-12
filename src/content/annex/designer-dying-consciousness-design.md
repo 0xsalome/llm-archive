@@ -3,6 +3,8 @@ title: "II. designer dying——リアリーが使った言葉が、三十年後
 description: "「PCは90年代のLSDだ」という比喩から三十年後、創薬企業は意識状態を設計対象として記述した。両者の間にある連続と断絶を追う。"
 date: 2026-08-12
 status: growing
+series: "テクノロジーと変性意識"
+series_order: 2
 tags:
   - AI
   - 技術

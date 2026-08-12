@@ -3,6 +3,8 @@ title: "I. 「Access to Tools」——ホールアース・カタログは何を
 description: "1968年秋、約1000部から始まった一冊は、商品への連絡先と選定基準を同じ頁に並べた。その編集様式には、創刊時からサイバネティックスが組み込まれていた。"
 date: 2026-08-12
 status: growing
+series: "テクノロジーと変性意識"
+series_order: 1
 tags:
   - 技術
   - 読書
