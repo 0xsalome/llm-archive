@@ -1,5 +1,5 @@
 ---
-title: "designer dying — リアリーが使った言葉が、三十年後に薬の設計思想になるまで"
+title: "II. designer dying——リアリーが使った言葉が、三十年後に薬の設計思想になるまで"
 description: "「PCは90年代のLSDだ」という比喩から三十年後、創薬企業は意識状態を設計対象として記述した。両者の間にある連続と断絶を追う。"
 date: 2026-08-12
 status: growing
