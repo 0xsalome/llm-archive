@@ -10,3 +10,7 @@ dist/
 .vite/
 .pnpm-store/
 .local/
+
+# 草案は手元にだけ残す。フォルダを保つためREADMEだけ追跡する
+草案/*
+!草案/README.md
