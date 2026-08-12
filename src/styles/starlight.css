@@ -23,6 +23,8 @@
   --llm-term-bg: #eef4e6;
   --llm-term-border: #8faa6b;
   --llm-term-text: #2d5a4c;
+  --sl-text-body: 1.0625rem;
+  --sl-line-height: 1.85;
 }
 
 :root[data-theme="dark"] {
@@ -125,7 +127,7 @@
   margin: 0;
   max-width: 44rem;
   color: var(--sl-color-gray-2);
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.75;
 }
 

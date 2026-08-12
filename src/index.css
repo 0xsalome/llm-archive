@@ -791,7 +791,7 @@ html:not([data-room-access="open"]) .room-page .vault-main {
   border-top: 1px solid var(--rule);
   margin-top: 1.5rem;
   padding-top: 2rem;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 1.85;
 }
 
