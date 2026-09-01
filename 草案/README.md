@@ -35,3 +35,5 @@ frontmatterは自分で書かなくて構いません。本文を読んだAIが 
 
 | 草案 | 公開先 | 日付 |
 | --- | --- | --- |
+| esalen_01_history_and_influence_revised.md | `/archive/esalen-institute-sixty-years/` | 2026-09-01 |
+| esalen_02_silicon_valley_and_now_revised.md | `/archive/esalen-silicon-valley-and-now/` | 2026-09-01 |
