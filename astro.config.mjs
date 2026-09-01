@@ -12,6 +12,12 @@ export default defineConfig({
   base,
   markdown: {
     rehypePlugins: [rehypeLazyImages],
+    // 脚注（[^1]）は本文の位置から外され、ページ末尾に一覧としてまとめられる。
+    // 既定の見出しが英語の "Footnotes" になるため、書庫の呼び方に合わせる。
+    remarkRehype: {
+      footnoteLabel: "主な参照資料",
+      footnoteBackLabel: "本文に戻る",
+    },
   },
   integrations: [
     starlight({

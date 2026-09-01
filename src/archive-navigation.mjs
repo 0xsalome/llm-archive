@@ -43,6 +43,19 @@ export const archiveSidebar = [
     ],
   },
   {
+    label: "Culture",
+    items: [
+      {
+        label: "エサレン研究所の60年\nカウンターカルチャーに何を渡し、その後どこへ流れたか",
+        link: "/archive/esalen-institute-sixty-years/",
+      },
+      {
+        label: "神秘の研究所は、いま何になったのか\nエサレン、神経科学、シリコンバレー",
+        link: "/archive/esalen-silicon-valley-and-now/",
+      },
+    ],
+  },
+  {
     label: "Reading",
     items: [
       {

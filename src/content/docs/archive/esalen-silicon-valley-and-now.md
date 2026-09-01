@@ -1,0 +1,299 @@
+---
+title: 神秘の研究所は、いま何になったのか——エサレン、神経科学、シリコンバレー
+description: 2010年代以降のエサレン研究所に、Google、Apple、Airbnbなどを経た人々が理事や参加者として現れた経緯を、災害と財務と語彙の変化から追うノート。
+date: 2026-09-01
+status: growing
+tags:
+  - 技術
+  - 観察
+source_type: web_research
+source_ref: "エサレン研究所の公開ページとプレスリリース、The New Yorker 2019年8月26日号、WIRED 2019、KAZU 2017、ProPublica Nonprofit Explorer（IRS Form 990）を確認したWebリサーチ"
+ai_process:
+  - structure
+  - rewrite
+confidence: medium
+review_needed: true
+related_notes:
+  - /archive/esalen-institute-sixty-years/
+---
+
+2026年8月、ビッグサーでTimber Fireが発生し、エサレン研究所は再び閉鎖した。9月1日現在、9月13日までのワークショップとプログラムはすべて中止されている。[^1]
+
+これは例外的な出来事に見えて、現在のエサレンを理解するにはむしろ典型的である。
+
+断崖、温泉、太平洋、山火事、地滑り、一本のハイウェイ。1960年代には「日常から切り離された場所」であることが変容体験の条件になった。現在は同じ地形が、数週間から数か月にわたって事業を停止させる経営条件にもなっている。
+
+もう一つ、この十数年で目立つ変化がある。
+
+Google、Apple、Facebook、Airbnbなどで働いた人々が、理事、経営者、参加者としてエサレンの周辺に現れるようになった。2019年、『The New Yorker』はこの重なりを「**Silicon Valley’s Crisis of Conscience**」という題で追った。記事には、かつてIntelやXerox PARCの幹部が訪れ、近年はApple、Google、Twitter関係者が来るようになったと記されている。[^2]
+
+なぜ1960年代のカウンターカルチャーの拠点へ、21世紀のビッグテックの人間が集まったのか。
+
+単純に「金持ち向けの高級リトリートになった」と見ると、半分しか見えない。テック業界の側にも、そこへ向かう理由が生まれていた。
+
+## 1. 2017年、閉ざされたエサレンにGoogle出身者がいた
+
+2017年2月、記録的な豪雨と地滑り、橋の損傷によってハイウェイ1号線が寸断された。エサレンは陸路から切り離され、一般客を迎えられない状態が約半年続く。従業員の多くはヘリコプターで避難し、21人ほどが敷地に残って維持管理を続けた。[^3]
+
+![海沿いの舗装路の先で山肌が崩れ、土砂が路面まで迫っている。路肩にカラーコーンが並ぶ。](https://commons.wikimedia.org/wiki/Special:FilePath/Big_Sur_Mud_Creek_Landslide.jpg)
+*2017年5月、ビッグサーのMud Creekで発生した地滑り。ハイウェイ1号線の約0.5キロが土砂に埋まった。撮影: カリフォルニア州運輸局（Caltrans）第5地区 / 出典: Wikimedia Commons / ライセンス: パブリックドメイン / 変更なし。*
+
+7月の再開時、地元公共ラジオKAZUの取材に対し、エサレン側は閉鎖による損失を約600万ドルと**見込んでいる**と答えた。確定額ではない。同年のForm 990を見ると、総収入は前年の約1877万ドルから約920万ドルへ落ち、約372万ドルの赤字になっている。[^3][^4]
+
+この危機の時期にExecutive Directorを務めていたのが、ベン・タウバーだった。
+
+> **ベン・タウバー**  
+> Googleでプロダクトマネージャーを務めた後、起業家向けエグゼクティブ・コーチング会社Velocityを共同創業。2015年にエサレン理事となり、2016年にExecutive Directorへ就任した。2017年の長期閉鎖時に運営を担い、2019年に理事職を離れている。生年は公開資料で確認できなかった。[^5]
+
+タウバーが興味深いのは、Google出身だからではない。
+
+彼がエサレンへ持ち込んだ社会変革の考え方が、シリコンバレー的だったからだ。
+
+Velocityについて、タウバーは「少数の創業者が自分の目的を明確にし、より良く行動できれば、社会へ大きな影響を与えられる」と説明していた。エサレンでも同じ論理が使われた。2019年の『The New Yorker』で、彼は組織の影響を拡大する方法として「**影響力のある人へ働きかける**」という戦略を語っている。[^2][^5]
+
+これは初期エサレンの「個人が変われば社会も変わる」という発想を、**影響力の大きい個人を先に変える**というモデルへ組み替えたものだった。
+
+2017年以降、エサレンの経営は災害によって何度も揺さぶられている。
+
+| 年 | 出来事 | 組織への影響 |
+| --- | --- | --- |
+| 2017 | 豪雨、地滑り、橋の損傷 | 約半年閉鎖、収入急減、人員削減 |
+| 2020 | COVID-19 | 対面事業停止。2020年度は約633万ドルの赤字 |
+| 2024 | ハイウェイ1号線崩落 | 決められた時間の車列走行に合わせて限定的に来訪再開 |
+| 2026 | Timber Fire | 再閉鎖。9月1日時点で9月13日までプログラム中止 |
+
+断崖の温泉という立地は、ブランドの中核であると同時に、事業継続上の最大の弱点でもある。
+
+## 2. なぜ、ビッグテックの人々が集まりだしたのか
+
+「カウンターカルチャーがシリコンバレーを生んだ」という大きな物語だけでは、2010年代のエサレンへの接近は説明しきれない。
+
+確認できる出来事を積み重ねると、四つの条件が重なっている。
+
+### 1）人脈は2017年より前から敷かれていた
+
+テック人脈は、地滑りのあと突然現れたわけではない。
+
+2012年にはチップ・コンリー（当時51〜52歳）が理事に入っている。コンリーはホテル企業Joie de Vivreの創業者で、後にAirbnbで経営陣の助言役を務めた人物である。著書『PEAK』では、マズローの欲求理論を企業経営へ応用していた。[^6]
+
+2013年、コンリーとWisdom 2.0創設者のソレン・ゴーダマーは、40歳未満のCEO・創業者17人をエサレンへ集めた。参加者には会社をGoogleやeBayへ売却したテック起業家も含まれていた。3日間のプログラムでは、瞑想、傾聴、感情の扱い方、組織文化、企業の社会的目的が一続きの問題として扱われた。出発点は「**意識的な企業をつくるには、経営者自身が意識的でなければならない**」というものだった。[^7]
+
+2015年にはタウバーが理事に入る。
+
+つまり2017年の危機がテック接続を生んだというより、**危機が起きたとき、すでに理事会の内側にテックと経営者コーチングへつながる回路があった**。
+
+『The New Yorker』によれば、その前にもIntelやXerox PARCの幹部が訪れていた。カウンターカルチャーとコンピュータ文化は、地理的にも人的にも完全に別世界だったわけではない。[^2]
+
+### 2）テック業界の側に「自分たちは何を作ったのか」という問題が生まれた
+
+2010年代後半、シリコンバレーの自己像が崩れ始める。
+
+SNSの依存的な設計、偽情報、プライバシー、選挙への影響、ミャンマーでの暴力扇動などが批判され、「技術は世界を良くする」という物語だけでは説明できない事態が続いた。
+
+この文脈で、『The New Yorker』はエサレンとシリコンバレーの接近を取材している。タウバーは、従来型の成功を手にした経営者が、それだけでは世界を良くしていないことに気づき始めている、と語った。[^2]
+
+トリスタン・ハリスの事例は、さらに具体的である。
+
+![カンファレンスの壇上で、ヘッドセットマイクを付けて話す男性の上半身。](https://commons.wikimedia.org/wiki/Special:FilePath/Tristan_Harris_at_Collision_Conf_2018_%28cropped%29.jpg)
+*トリスタン・ハリス（2018年5月、ニューオーリンズで開かれたCollision Conferenceにて）。撮影: Stephen McCarthy／Collision via Sportsfile / 出典: Wikimedia Commons / ライセンス: [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.ja) / 変更なし。*
+
+ハリスはGoogleでデザイン倫理に関わった後、Center for Humane Technologyを共同設立し、テクノロジーが人間の注意や社会関係をどう変えるかを批判するようになった。2019年の『WIRED』によれば、ハリスとアザ・ラスキン（滞在当時、二人とも34〜35歳）はエサレンへ滞在し、部屋の壁を紙で埋めながら、依存、偽情報、民主主義の劣化などを一つの概念にまとめようとした。その思考作業が、後の“**human downgrading（人間能力の劣化）**”という言葉につながっていく。[^8]
+
+ここでエサレンは、Googleの福利厚生施設として使われたわけではない。
+
+**会社の中では扱いにくい問いを、会社の外で考える場所**として使われている。
+
+宗教施設のように信仰告白を求めず、大学のように論文へ落とす必要もなく、経営会議のように四半期の成果へ結びつけなくてよい。テック業界にとって、この曖昧な制度外空間は使い勝手がよかった。
+
+### 3）「人間の潜在能力」は「自己最適化」へ翻訳しやすかった
+
+エサレンが1960年代から使ってきた語彙には、自己実現、ピーク体験、潜在能力、変容、統合がある。
+
+この語彙は、スタートアップ文化の「創業者の能力を最大化する」「より良い意思決定をする」「集中力やレジリエンスを高める」という言葉へ移し替えやすい。
+
+2013年のCEOリトリートで、参加したテック起業家の一人は、自分の会社が実は「**self-actualization（自己実現）**」を提供する事業なのだと語ったという。コンリー自身も、マズローをホテル経営へ翻訳していた。[^7]
+
+初期エサレンでは「意識の解放」が社会を変えると考えられた。
+
+2010年代のシリコンバレーでは、それが「創業者が自分を理解すれば、会社が変わる」「経営者の意識が変われば、何百万人ものユーザーへ影響する」という論理へ置き換えられた。
+
+同じ言葉が、反体制文化と資本主義の経営論の両方で使える。
+
+この翻訳可能性が、両者の接続を滑らかにした。
+
+### 4）エサレン側にも、接続を強める現実的な理由があった
+
+財務資料を見ると、エサレンはもともと寄付だけで動く研究所ではない。
+
+2016年度の収入の86.1％、2019年度は91.9％、2024年度は90.3％がProgram Servicesから来ている。2024年度の総収入約2244万ドルのうち、約2026万ドルがプログラム事業収入だった。[^4]
+
+つまり、宿泊、講座、教育プログラムを継続的に販売できなければ、研究部門も土地管理も維持できない。
+
+2017年の閉鎖でこの収入が急減した以上、購買力が高く、寄付やネットワークも持つベイエリアのテック層が、財務的に相性のよい参加者だったことは確かだろう。
+
+ただし、公開資料から「財務再建のために高所得のテック層を狙った」という内部方針までは確認できない。実際に確認できるのは、災害前からテック経営者向けプログラムがあり、理事会にその人脈が入り、災害後に「影響力のある人を変える」という戦略が公に語られた、という順序である。
+
+ここを区別すると、単なる「高級化」の物語より実態が見えやすい。
+
+## 3. 現在のエサレンは、何の組織なのか
+
+現在のエサレンは501(c)(3)の非営利教育組織である。
+
+Center for Theory & Research（CTR）も存続し、研究者や実践者を集めた招待制の会議を続けている。宗教学者ジェフリー・クリパルは現在もCTRの共同ディレクターを務める。[^9]
+
+一方、組織の財務を支えているのは一般向けの滞在事業である。
+
+![木立の前に立つ木製の看板。「ESALEN INSTITUTE / BY RESERVATION ONLY」と彫られている。](https://commons.wikimedia.org/wiki/Special:FilePath/Esalen_Institute_-_Sarah_Stierch.jpg)
+*ハイウェイ1号線沿いの入口看板（2015年）。「BY RESERVATION ONLY（予約者のみ）」の下に、創立50年を記す一行が入っている。撮影: Sarah Stierch / 出典: Wikimedia Commons / ライセンス: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja) / 変更なし。*
+
+| 観点 | 2026年現在の実態 |
+| --- | --- |
+| 法的形態 | 501(c)(3) 非営利教育組織 |
+| 収益 | 2024年度は総収入約2244万ドル。90.3％がProgram Services |
+| 主な公開事業 | 宿泊・食事付きワークショップ、Self-Guided Explorations、マッサージ |
+| 研究 | Center for Theory & Researchが招待制会議などを継続 |
+| 一般滞在価格 | Self-Guided Explorationsは3日2泊560～5,000ドル、5日4泊940～8,560ドル |
+| 奨学金 | 公開プログラム費用の50～90％を補助 |
+| Work Scholar | 約3か月。週約36時間勤務＋週4時間の学習。時給16.90ドル |
+| 土地 | Esselen Tribeとの関係修復・共同管理を掲げる |
+
+価格を見ると、「**高級リトリート**」という批判には根拠がある。
+
+Self-Guided Explorationsの3日2泊は、2026年現在560ドルから5000ドルまで幅がある。最安枠では寝袋を持参して共有スペースの床で眠り、上位の宿泊では数千ドルになる。5日4泊の上限は8560ドルである。[^10]
+
+同時に、寄付を原資とする奨学金制度があり、講座と宿泊費の50～90％を補助する。[^11]
+
+Work Scholar Programも現在まで残る。ただし昔の「宿泊費を労働で賄う安価な滞在制度」とだけ理解すると実態を外す。現在は有給の居住プログラムで、参加者は厨房またはハウスキーピングを中心に週約36時間働き、別に週4時間のhuman potential curriculumを受ける。時給は16.90ドルで、住居・光熱・食事の費用として給与期間ごとに200ドルが差し引かれる。[^12]
+
+ここには、エサレンの二つの顔が同時にある。
+
+一方では、数日間に数千ドルを支払う参加者がいる。
+
+もう一方では、皿洗い、客室清掃、洗濯、農園作業が「人間の潜在能力」を学ぶプログラムの一部として組み込まれている。
+
+高額な体験商品と共同体的な労働が、同じキャンパスの中に存在する。
+
+「Institute」という名称と「リトリート施設」という実態のずれは確かにある。ただし研究部門が消滅したわけでも、すべてがホテル事業になったわけでもない。現在のエサレンは、**研究・教育・宿泊・労働共同体を、一つの非営利事業の中で維持している組織**と見る方が近い。
+
+テックとの接続が見える人物を並べると、現在の構図がさらに分かりやすい。
+
+| 人物 | 一般向けの説明 | エサレンとの接点 |
+| --- | --- | --- |
+| デイヴ・モーリン（1980年生まれ） | Apple、Facebookを経た起業家・投資家。Path共同創業者 | 現在の理事長[^14] |
+| ベン・タウバー（生年不明） | 元Googleプロダクトマネージャー、起業家向けコーチ | 2015年理事、2016～19年ごろ運営中枢 |
+| チップ・コンリー（1960年生まれ） | ホテル企業創業者、Airbnb元戦略アドバイザー、『PEAK』著者 | 2012～19年理事。マズローを経営論へ翻訳 |
+| トリスタン・ハリス（1984年生まれ） | 元Googleデザイン倫理担当、Center for Humane Technology共同創設者 | エサレン滞在中にAza Raskinと“human downgrading”構想を整理 |
+| アンドリュー・ヒューバーマン（1975年生まれ） | スタンフォード大学神経科学者、科学コミュニケーター | 2026年6月に理事就任 |
+| ジェフリー・クリパル（1962年生まれ） | ライス大学宗教学教授、『Esalen』著者 | 理事、Center for Theory & Research共同ディレクター |
+
+デイヴ・モーリンとアンドリュー・ヒューバーマンが理事会に入り、ジェフリー・クリパルが研究部門にいる。
+
+神経科学、ベンチャー投資、宗教学が同じ組織の中に置かれている。
+
+この雑居性は、1960年代からそれほど変わっていない。
+
+## 4. 神秘性は消えたのか
+
+2026年6月、エサレンはアンドリュー・ヒューバーマン（当時50歳）の理事就任を発表した。公式発表では、彼の研究を「**focus, resilience, and performance（集中、レジリエンス、パフォーマンス）**」へつなぐ仕事として紹介している。[^13]
+
+ここには、現在のエサレンが使う言葉の変化がよく出ている。
+
+| 軸 | 初期 | 現在 |
+| --- | --- | --- |
+| 体験を説明する語彙 | 解放、自己実現、ピーク体験、意識の拡張 | ウェルビーイング、レジリエンス、トラウマ、神経科学、統合 |
+| 権威 | カリスマ的実践者、本人の強烈な経験 | 専門資格、研究、科学コミュニケーション、安全設計も併用 |
+| 変性意識 | LSD、強度の高い集団体験、実験性 | 呼吸法、瞑想、サイケデリック統合、安全管理されたプログラム |
+| 参加者の象徴 | 心理学者、芸術家、対抗文化の若者 | 経営者、テック従事者、ウェルネス利用者も加わる |
+| 経済 | 共同生活、簡素な滞在、労働奉仕 | 高額宿泊、奨学金、有給Work Scholarが併存 |
+| 社会変革の理路 | 個人が変われば社会が変わる | 影響力のある個人を変え、組織や社会へ波及させる |
+| 自然 | 日常から切断する変容の条件 | ブランド資源であり、経営を止める災害リスクでもある |
+
+「神秘が科学に置き換わった」と言うのも正確ではない。
+
+現在のワークショップにも、瞑想、儀礼、ゲシュタルト、身体実践、非日常的な意識状態を扱うものは残っている。変わったのは、それらを説明するときに、神経科学、トラウマ、神経可塑性、統合といった現代の語彙が加わったことだ。
+
+![断崖の上に建つガラス張りの浴場棟。屋上のテラスに寝椅子が並び、崖下は岩の海岸。](https://commons.wikimedia.org/wiki/Special:FilePath/Slates_Hot_Springs_-_fileDSC_5788-w.jpg)
+*崖の上に建つ浴場棟（Slate's Hot Springs）。2015年の空撮。1962年にプログラムが始まった温泉であり、現在も宿泊とワークショップの中心にある。撮影: John Wiley / 出典: Wikimedia Commons / ライセンス: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.ja) / 変更なし。*
+
+この変化には安全面の理由もある。
+
+1970年代のエンカウンター文化では、「体験を強くすれば変化が起こる」という発想が先行し、指導者の権力や参加者への長期的影響が十分に管理されない場合があった。現在の心理療法やサイケデリック研究では、スクリーニング、安全管理、統合、倫理といった概念が以前より重視される。
+
+ただし、科学の語彙は安全性だけに働くわけではない。
+
+「神経科学的」「エビデンスベース」「レジリエンス」「パフォーマンス」という説明は、企業や高所得の専門職にも受け入れられやすい。かつての「**意識の解放**」が、現代では「**自己最適化**」として販売できる。
+
+ここに、現在のエサレンの最も面白いねじれがある。
+
+初期エサレンは、既存の社会から一度離れることを変化の条件にした。
+
+現在は、社会の中心にいる経営者や投資家をビッグサーへ一度連れ出し、回復させ、考え直させ、再び社会へ戻す。
+
+そこで本当に企業の設計や利益の配分、ユーザーへの扱いまで変わるのか。それとも個人だけが回復し、同じ競争へ戻るのか。
+
+タウバーの「影響力のある人を変える」という戦略は、効率がよい。その一方で、社会変革を少数のエリートの内面に委ねる構造にもなる。
+
+> **悪魔の代弁者**
+>
+> 現在のエサレンは、テック業界に自分たちが作ったものを問い直させる場所なのか。
+>
+> それとも、疲弊した経営者を回復させ、同じ成長競争へ送り返すメンテナンス施設なのか。
+>
+> 答えを判断するには、滞在中に何を感じたかより、その後に会社やプロダクトがどう変わったかを見る必要がある。
+
+この問いが残っている点では、エサレンはまだ1960年代と同じ実験を続けている。
+
+**個人の変容は、どこまで社会の変化になるのか。**
+
+言葉と顧客は変わったが、この仮説だけは60年以上、未決着のままである。
+
+---
+
+*執筆時点：2026年9月1日。料金、理事会、災害による営業状況は今後変わる可能性がある。*
+
+## 付記: 誰が、何歳でエサレンに関わったのか
+
+前編と同じ見方で、現在のエサレンに関わる人物の年齢を並べる。
+
+2013年のリトリートは、参加資格を「40歳未満のCEO・創業者」に置いた。1964年にエサレンへ来たパールズは70歳、構造的統合を持ち込んだロルフは60代だった。**年齢の重心は、長く実践してきた指導者から、これから会社を大きくする経営者の側へ移っている。**
+
+| 人物 | 生年 | エサレンとの接点 | そのときの年齢 |
+| --- | --- | --- | --- |
+| チップ・コンリー | 1960年 | 2012年に理事就任 | 51〜52歳 |
+| 2013年のCEOリトリート参加者 | — | 17人が3日間滞在 | 全員40歳未満 |
+| ベン・タウバー | 確認できず | 2015年に理事、2016年にExecutive Director | 確認できず |
+| トリスタン・ハリス | 1984年 | 2018〜19年ごろの滞在 | 34〜35歳 |
+| アザ・ラスキン | 1984年 | 同じ滞在 | 34〜35歳 |
+| デイヴ・モーリン | 1980年 | 2026年時点で理事長 | 45〜46歳 |
+| アンドリュー・ヒューバーマン | 1975年 | 2026年6月に理事就任 | 50歳 |
+| ジェフリー・クリパル | 1962年 | 2026年時点で理事、CTR共同ディレクター | 63〜64歳 |
+
+年齢は生年と出来事の年から出した概算で、誕生日の前後で1歳ずれる場合は幅で示した。ベン・タウバーとWisdom 2.0のソレン・ゴーダマーは、生年を公開資料で確認できなかった。エサレンへ実際に滞在した記録を年単位で確認できない人物は、表に入れていない。
+
+## 関連ノート
+
+- [エサレン研究所の60年——カウンターカルチャーに何を渡し、その後どこへ流れたか](/llm-archive/archive/esalen-institute-sixty-years/)
+
+## 画像の出典
+
+- [Big Sur Mud Creek Landslide.jpg](https://commons.wikimedia.org/wiki/File:Big_Sur_Mud_Creek_Landslide.jpg) / California Department of Transportation District Five / パブリックドメイン / 変更なし
+- [Tristan Harris at Collision Conf 2018 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Tristan_Harris_at_Collision_Conf_2018_(cropped).jpg) / Stephen McCarthy／Collision via Sportsfile / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.ja) / 変更なし
+- [Esalen Institute - Sarah Stierch.jpg](https://commons.wikimedia.org/wiki/File:Esalen_Institute_-_Sarah_Stierch.jpg) / Sarah Stierch / [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja) / 変更なし
+- [Slates Hot Springs - fileDSC 5788-w.jpg](https://commons.wikimedia.org/wiki/File:Slates_Hot_Springs_-_fileDSC_5788-w.jpg) / John Wiley / [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.ja) / 変更なし
+
+画像は、著作者・出典・ライセンスが確認できたものだけを掲載した。現在のワークショップや宿泊室の内部を写した写真は、エサレン自身か撮影者が権利を持つものばかりで、再利用条件を確認できるものが見つからなかった。そのため、施設の外観と入口の看板で代えている。
+
+[^1]: Esalen, “Timber Fire Updates.” https://www.esalen.org/timber-fire-updates
+[^2]: Andrew Marantz, “Silicon Valley’s Crisis of Conscience,” *The New Yorker*, August 26, 2019. https://www.newyorker.com/magazine/2019/08/26/silicon-valleys-crisis-of-conscience
+[^3]: KAZU, “Big Sur’s Esalen Reopens After Record Long Closure,” July 28, 2017. https://www.kazu.org/local/2017-07-28/big-surs-esalen-reopens-after-record-long-closure
+[^4]: ProPublica Nonprofit Explorer, “Esalen Institute,” IRS Form 990 data. https://projects.propublica.org/nonprofits/organizations/946114235
+[^5]: Esalen, “A New Voice for Esalen: Meet Executive Director Ben Tauber”; “Annabel Teal Appointed to Esalen Board of Trustees.” https://www.esalen.org/post/a-new-voice-for-esalen-meet-executive-director-ben-tauber ; https://www.esalen.org/press-release/annabel-teal-appointed-to-esalen-board-of-trustees
+[^6]: Esalen, “Annabel Teal Appointed to Esalen Board of Trustees.” https://www.esalen.org/press-release/annabel-teal-appointed-to-esalen-board-of-trustees
+[^7]: Chip Conley, “A New Generation of Business Leaders Brainstorms at Esalen.” https://www.esalen.org/ctr-journal/a-new-generation-of-business-leaders-brainstorms-at-esalen
+[^8]: WIRED, “Tristan Harris: Tech Is ‘Downgrading Humans.’ It’s Time to Fight Back,” 2019. https://www.wired.com/story/tristan-harris-tech-is-downgrading-humans-time-to-fight-back/
+[^9]: Esalen, “Jeffrey J. Kripal”; Center for Theory & Research. https://www.esalen.org/faculty/jeffrey-kripal ; https://www.esalen.org/ctr-main
+[^10]: Esalen, “Self Guided Explorations.” https://www.esalen.org/learn/self-guided-explorations
+[^11]: Esalen, “Scholarships.” https://www.esalen.org/learn/scholarships
+[^12]: Esalen, “Work Scholar Program.” https://www.esalen.org/learn/work-scholar-program
+[^13]: Esalen, “Neuroscientist Andrew Huberman and Global Health Leader Edith Elliott Join Esalen Board of Trustees,” June 15, 2026. https://www.esalen.org/press-release/andrew-huberman-edith-elliott-join-esalen-board-of-trustees
+[^14]: Esalen, “Dave Morin | Board Member.” https://www.esalen.org/board-members/dave-morin
