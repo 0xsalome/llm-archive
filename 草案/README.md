@@ -37,3 +37,4 @@ frontmatterは自分で書かなくて構いません。本文を読んだAIが 
 | --- | --- | --- |
 | esalen_01_history_and_influence_revised.md | `/archive/esalen-institute-sixty-years/` | 2026-09-01 |
 | esalen_02_silicon_valley_and_now_revised.md | `/archive/esalen-silicon-valley-and-now/` | 2026-09-01 |
+| esalen_03_people_network_refined.md | 単独記事にせず、上の2本へ統合（前編に第4節「誰と誰が、そこで同じ時間を過ごしたのか」、後編に「同じ肩書きが、別の有名人に付いている」） | 2026-09-02 |
