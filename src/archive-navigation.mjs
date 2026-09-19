@@ -46,6 +46,10 @@ export const archiveSidebar = [
     label: "Culture",
     items: [
       {
+        label: "神を迎え、神と遊ぶ\n神楽の起源と、舞に込められた意味",
+        link: "/archive/kagura-research-overview/",
+      },
+      {
         label: "エサレン研究所の60年\nカウンターカルチャーに何を渡し、その後どこへ流れたか",
         link: "/archive/esalen-institute-sixty-years/",
       },
